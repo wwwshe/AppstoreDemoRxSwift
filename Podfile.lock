@@ -1,0 +1,58 @@
+PODS:
+  - CRuntime (2.1.2)
+  - FloatRatingView (4.0)
+  - Kingfisher (5.13.0):
+    - Kingfisher/Core (= 5.13.0)
+  - Kingfisher/Core (5.13.0)
+  - Realm (3.18.0):
+    - Realm/Headers (= 3.18.0)
+  - Realm/Headers (3.18.0)
+  - RealmSwift (3.18.0):
+    - Realm (= 3.18.0)
+  - Runtime (2.1.0):
+    - CRuntime
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - Unrealm (0.2.5):
+    - RealmSwift (= 3.18.0)
+    - Runtime (= 2.1.0)
+
+DEPENDENCIES:
+  - FloatRatingView
+  - Kingfisher
+  - RxCocoa
+  - RxSwift
+  - Unrealm
+
+SPEC REPOS:
+  trunk:
+    - CRuntime
+    - FloatRatingView
+    - Kingfisher
+    - Realm
+    - RealmSwift
+    - Runtime
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - Unrealm
+
+SPEC CHECKSUMS:
+  CRuntime: d7ae373e07ab36e92ad273259557e3817e0c214b
+  FloatRatingView: bb6bdddfbeec51b1d387b4bd50abc27b4dfccd48
+  Kingfisher: 0d334cada987fcddbe9b5cec516406e1ee9d4748
+  Realm: 7b3d04740facf45e958a514b466a32b04f1113d6
+  RealmSwift: c817b5f374668cf08f649afb05f55d92a787649c
+  Runtime: 3e42815d18fa3075631768e79f02be2ad7e2b18f
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  Unrealm: 6003d5bcd985a0f365ddf4ecea37be4c395626de
+
+PODFILE CHECKSUM: 14e6967db1f921c888e6e9b2750381e22af9fe00
+
+COCOAPODS: 1.8.3
