@@ -82,11 +82,11 @@
                                 <rect key="frame" x="16" y="44" width="382" height="818"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchResultTableViewCell" rowHeight="400" id="z4a-yY-Yfo" customClass="SearchResultTableViewCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="382" height="400"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchResultTableViewCell" id="z4a-yY-Yfo" customClass="SearchResultTableViewCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="382" height="401.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z4a-yY-Yfo" id="6Fr-kc-rPT">
-                                            <rect key="frame" x="0.0" y="0.0" width="382" height="400"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="401.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eSL-SF-WA3">
@@ -97,22 +97,22 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ur-HE-tU5">
-                                                    <rect key="frame" x="70" y="20" width="230" height="17"/>
+                                                    <rect key="frame" x="70" y="20" width="210" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3z-aa-H6j">
-                                                    <rect key="frame" x="316" y="32.5" width="50" height="35"/>
+                                                    <rect key="frame" x="296" y="32.5" width="70" height="35"/>
                                                     <color key="backgroundColor" white="0.90123155379999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="1Iz-FC-21S"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="1Iz-FC-21S"/>
                                                         <constraint firstAttribute="height" constant="35" id="JcU-PE-TPC"/>
                                                     </constraints>
                                                     <state key="normal" title="받기"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="설명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAz-Lu-nLn">
-                                                    <rect key="frame" x="70" y="41" width="230" height="14.5"/>
+                                                    <rect key="frame" x="70" y="41" width="210" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.70467122400000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -149,18 +149,21 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Oop-ro-z6y">
-                                                    <rect key="frame" x="0.0" y="110" width="382" height="260"/>
+                                                    <rect key="frame" x="0.0" y="110" width="382" height="261.5"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Hi-ap-PIF">
-                                                            <rect key="frame" x="0.0" y="0.0" width="120.5" height="260"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Hi-ap-PIF">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120.5" height="261.5"/>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mGt-VC-Ajg">
-                                                            <rect key="frame" x="130.5" y="0.0" width="121" height="260"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mGt-VC-Ajg">
+                                                            <rect key="frame" x="130.5" y="0.0" width="121" height="261.5"/>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n3x-4b-Srl">
-                                                            <rect key="frame" x="261.5" y="0.0" width="120.5" height="260"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n3x-4b-Srl">
+                                                            <rect key="frame" x="261.5" y="0.0" width="120.5" height="261.5"/>
                                                         </imageView>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="261" id="ck1-3Y-7ac"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
@@ -297,7 +300,7 @@
         <!--App Detail View Controller-->
         <scene sceneID="Bq3-AN-NHI">
             <objects>
-                <viewController storyboardIdentifier="AppDetailViewController" id="fY5-8h-iZd" customClass="AppDetailViewController" customModule="AppstoreDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AppDetailViewController" id="fY5-8h-iZd" customClass="AppDetailViewController" customModule="AppstoreDemoRxSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x9A-6i-so2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -306,7 +309,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailTopCell" rowHeight="133" id="awW-m7-9UY" customClass="AppDetailTopCell" customModule="AppstoreDemo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailTopCell" rowHeight="133" id="awW-m7-9UY" customClass="AppDetailTopCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="133"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="awW-m7-9UY" id="OdI-Mn-6Wc">
@@ -378,7 +381,7 @@
                                             <outlet property="subName" destination="BK2-Xb-78X" id="bKF-VX-Wxw"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailRatingCell" rowHeight="66" id="R63-aF-e1u" customClass="AppDetailRatingCell" customModule="AppstoreDemo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailRatingCell" rowHeight="66" id="R63-aF-e1u" customClass="AppDetailRatingCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="161" width="414" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R63-aF-e1u" id="of9-i2-QV7">
@@ -465,7 +468,7 @@
                                             <outlet property="ratingText" destination="goF-pC-2oj" id="TnY-dj-4Yk"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailUpdateContentCell" rowHeight="158" id="QcP-DQ-Tx1" customClass="AppDetailUpdateContentCell" customModule="AppstoreDemo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailUpdateContentCell" rowHeight="158" id="QcP-DQ-Tx1" customClass="AppDetailUpdateContentCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="227" width="414" height="158"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QcP-DQ-Tx1" id="cjE-V3-Yns">
@@ -545,7 +548,7 @@
                                             <outlet property="versionText" destination="DTE-ZI-yIg" id="5eN-Jg-JaW"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailScreenShotCell" rowHeight="158" id="oYe-vW-vTA" customClass="AppDetailScreenShotCell" customModule="AppstoreDemo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailScreenShotCell" rowHeight="158" id="oYe-vW-vTA" customClass="AppDetailScreenShotCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="385" width="414" height="158"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oYe-vW-vTA" id="hKg-yp-sKm">
@@ -562,7 +565,7 @@
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScreenshotCell" id="taw-CD-ajb" customClass="ScreenshotCell" customModule="AppstoreDemo" customModuleProvider="target">
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScreenshotCell" id="taw-CD-ajb" customClass="ScreenshotCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -598,7 +601,7 @@
                                             <outlet property="collectionView" destination="3s6-sq-cTy" id="ca2-XZ-d7R"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailContentCell" rowHeight="158" id="Tdz-Dq-TSe" customClass="AppDetailContentCell" customModule="AppstoreDemo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailContentCell" rowHeight="158" id="Tdz-Dq-TSe" customClass="AppDetailContentCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="543" width="414" height="158"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tdz-Dq-TSe" id="uya-Uy-94e">
@@ -634,7 +637,7 @@
                                             <outlet property="contentText" destination="nSa-GP-bVg" id="rp1-te-UMn"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailDeveloperCell" rowHeight="69" id="fi6-1p-tXc" customClass="AppDetailDeveloperCell" customModule="AppstoreDemo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailDeveloperCell" rowHeight="69" id="fi6-1p-tXc" customClass="AppDetailDeveloperCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="701" width="414" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fi6-1p-tXc" id="mb8-WT-dV8">
@@ -670,7 +673,7 @@
                                             <outlet property="devName" destination="EG8-WD-mdm" id="7Ge-N4-sWJ"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailInfoCell" rowHeight="44" id="tP7-My-36a" customClass="AppDetailInfoCell" customModule="AppstoreDemo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailInfoCell" rowHeight="44" id="tP7-My-36a" customClass="AppDetailInfoCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="770" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tP7-My-36a" id="Fsc-aU-Oxf">
@@ -736,7 +739,7 @@
         <!--Multi Image Show View Controller-->
         <scene sceneID="Jdu-Nq-g9a">
             <objects>
-                <viewController storyboardIdentifier="MultiImageShowViewController" id="8YI-oX-iiH" customClass="MultiImageShowViewController" customModule="AppstoreDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MultiImageShowViewController" id="8YI-oX-iiH" customClass="MultiImageShowViewController" customModule="AppstoreDemoRxSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eBq-mS-HRt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -758,7 +761,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScreenshotCell" id="7X0-sK-I6Y" customClass="ScreenshotCell" customModule="AppstoreDemo" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScreenshotCell" id="7X0-sK-I6Y" customClass="ScreenshotCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">

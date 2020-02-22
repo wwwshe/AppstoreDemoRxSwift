@@ -14,6 +14,7 @@ import RxSwift
 extension SearchListViewController : UISearchResultsUpdating, UISearchBarDelegate{
     func updateSearchResults(for searchController: UISearchController) {
         let text = searchController.searchBar.text!
+        print("search text : \(text)")
         guard text != "" else {
             searchListTable.isHidden = true
             beforeHistoryTableView.isHidden = true
@@ -22,6 +23,7 @@ extension SearchListViewController : UISearchResultsUpdating, UISearchBarDelegat
         self.viewModel.beforeSearchText.accept(text)
         self.searchListTable.isHidden = true
         self.beforeHistoryTableView.isHidden = false
+        self.searchText.accept(text)
     }
     
     
@@ -32,12 +34,15 @@ extension SearchListViewController : UISearchResultsUpdating, UISearchBarDelegat
         self.viewModel.seachText.accept(searchBar.text!)
         self.searchListTable.isHidden = false
         self.beforeHistoryTableView.isHidden = true
+        print("searchBar Click end")
         
-      
     }
+    
+    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         
     }
+    
     
     
 }

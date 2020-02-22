@@ -61,14 +61,14 @@ extension AppStoreData {
 
 // MARK: - Result
 struct AppstoreSearchResult: Codable {
-    let isGameCenterEnabled: Bool
+   let isGameCenterEnabled: Bool
     let screenshotUrls, ipadScreenshotUrls: [String]
     let appletvScreenshotUrls: [JSONAny]
     let artworkUrl60, artworkUrl512, artworkUrl100: String
     let artistViewURL: String
     let supportedDevices, advisories: [String]
-    let kind: Kind
     let features: [Feature]
+    let kind: Kind
     let trackCensoredName: String
     let languageCodesISO2A: [String]
     let fileSizeBytes: String
@@ -77,47 +77,48 @@ struct AppstoreSearchResult: Codable {
     let userRatingCountForCurrentVersion: Int?
     let trackViewURL: String
     let trackContentRating: Rating
-    let releaseDate: Date
     let trackID: Int
     let trackName: String
+    let releaseDate: Date
+    let primaryGenreID: Int
+    let sellerName: String
     let currentVersionReleaseDate: Date
     let releaseNotes: String
     let isVppDeviceBasedLicensingEnabled: Bool
     let primaryGenreName: String
     let genreIDS: [String]
-    let primaryGenreID: Int
-    let sellerName, minimumOSVersion: String
-    let formattedPrice: FormattedPrice
+    let minimumOSVersion: String
+    let formattedPrice: FormattedPrice?
     let currency: Currency
-    let version: String
-    let wrapperType: Kind
+    let resultDescription: String
     let artistID: Int
     let artistName: String
     let genres: [String]
-    let price: Int
-    let resultDescription, bundleID: String
-    let averageUserRating: Double
-    let userRatingCount: Int
+    let price: Int?
+    let bundleID, version: String
+    let wrapperType: Kind
+    let averageUserRating: Double?
+    let userRatingCount: Int?
     let sellerURL: String?
 
     enum CodingKeys: String, CodingKey {
         case isGameCenterEnabled, screenshotUrls, ipadScreenshotUrls, appletvScreenshotUrls, artworkUrl60, artworkUrl512, artworkUrl100
         case artistViewURL = "artistViewUrl"
-        case supportedDevices, advisories, kind, features, trackCensoredName, languageCodesISO2A, fileSizeBytes, contentAdvisoryRating, averageUserRatingForCurrentVersion, userRatingCountForCurrentVersion
+        case supportedDevices, advisories, features, kind, trackCensoredName, languageCodesISO2A, fileSizeBytes, contentAdvisoryRating, averageUserRatingForCurrentVersion, userRatingCountForCurrentVersion
         case trackViewURL = "trackViewUrl"
-        case trackContentRating, releaseDate
+        case trackContentRating
         case trackID = "trackId"
-        case trackName, currentVersionReleaseDate, releaseNotes, isVppDeviceBasedLicensingEnabled, primaryGenreName
-        case genreIDS = "genreIds"
+        case trackName, releaseDate
         case primaryGenreID = "primaryGenreId"
-        case sellerName
+        case sellerName, currentVersionReleaseDate, releaseNotes, isVppDeviceBasedLicensingEnabled, primaryGenreName
+        case genreIDS = "genreIds"
         case minimumOSVersion = "minimumOsVersion"
-        case formattedPrice, currency, version, wrapperType
+        case formattedPrice, currency
+        case resultDescription = "description"
         case artistID = "artistId"
         case artistName, genres, price
-        case resultDescription = "description"
         case bundleID = "bundleId"
-        case averageUserRating, userRatingCount
+        case version, wrapperType, averageUserRating, userRatingCount
         case sellerURL = "sellerUrl"
     }
 }
@@ -151,8 +152,8 @@ extension AppstoreSearchResult {
         artistViewURL: String? = nil,
         supportedDevices: [String]? = nil,
         advisories: [String]? = nil,
-        kind: Kind? = nil,
         features: [Feature]? = nil,
+        kind: Kind? = nil,
         trackCensoredName: String? = nil,
         languageCodesISO2A: [String]? = nil,
         fileSizeBytes: String? = nil,
@@ -161,29 +162,29 @@ extension AppstoreSearchResult {
         userRatingCountForCurrentVersion: Int?? = nil,
         trackViewURL: String? = nil,
         trackContentRating: Rating? = nil,
-        releaseDate: Date? = nil,
         trackID: Int? = nil,
         trackName: String? = nil,
+        releaseDate: Date? = nil,
+        primaryGenreID: Int? = nil,
+        sellerName: String? = nil,
         currentVersionReleaseDate: Date? = nil,
         releaseNotes: String? = nil,
         isVppDeviceBasedLicensingEnabled: Bool? = nil,
         primaryGenreName: String? = nil,
         genreIDS: [String]? = nil,
-        primaryGenreID: Int? = nil,
-        sellerName: String? = nil,
         minimumOSVersion: String? = nil,
-        formattedPrice: FormattedPrice? = nil,
+        formattedPrice: FormattedPrice?? = nil,
         currency: Currency? = nil,
-        version: String? = nil,
-        wrapperType: Kind? = nil,
+        resultDescription: String? = nil,
         artistID: Int? = nil,
         artistName: String? = nil,
         genres: [String]? = nil,
-        price: Int? = nil,
-        resultDescription: String? = nil,
+        price: Int?? = nil,
         bundleID: String? = nil,
-        averageUserRating: Double? = nil,
-        userRatingCount: Int? = nil,
+        version: String? = nil,
+        wrapperType: Kind? = nil,
+        averageUserRating: Double?? = nil,
+        userRatingCount: Int?? = nil,
         sellerURL: String?? = nil
     ) -> AppstoreSearchResult {
         return AppstoreSearchResult(
@@ -197,8 +198,8 @@ extension AppstoreSearchResult {
             artistViewURL: artistViewURL ?? self.artistViewURL,
             supportedDevices: supportedDevices ?? self.supportedDevices,
             advisories: advisories ?? self.advisories,
-            kind: kind ?? self.kind,
             features: features ?? self.features,
+            kind: kind ?? self.kind,
             trackCensoredName: trackCensoredName ?? self.trackCensoredName,
             languageCodesISO2A: languageCodesISO2A ?? self.languageCodesISO2A,
             fileSizeBytes: fileSizeBytes ?? self.fileSizeBytes,
@@ -207,27 +208,27 @@ extension AppstoreSearchResult {
             userRatingCountForCurrentVersion: userRatingCountForCurrentVersion ?? self.userRatingCountForCurrentVersion,
             trackViewURL: trackViewURL ?? self.trackViewURL,
             trackContentRating: trackContentRating ?? self.trackContentRating,
-            releaseDate: releaseDate ?? self.releaseDate,
             trackID: trackID ?? self.trackID,
             trackName: trackName ?? self.trackName,
+            releaseDate: releaseDate ?? self.releaseDate,
+            primaryGenreID: primaryGenreID ?? self.primaryGenreID,
+            sellerName: sellerName ?? self.sellerName,
             currentVersionReleaseDate: currentVersionReleaseDate ?? self.currentVersionReleaseDate,
             releaseNotes: releaseNotes ?? self.releaseNotes,
             isVppDeviceBasedLicensingEnabled: isVppDeviceBasedLicensingEnabled ?? self.isVppDeviceBasedLicensingEnabled,
             primaryGenreName: primaryGenreName ?? self.primaryGenreName,
             genreIDS: genreIDS ?? self.genreIDS,
-            primaryGenreID: primaryGenreID ?? self.primaryGenreID,
-            sellerName: sellerName ?? self.sellerName,
             minimumOSVersion: minimumOSVersion ?? self.minimumOSVersion,
             formattedPrice: formattedPrice ?? self.formattedPrice,
             currency: currency ?? self.currency,
-            version: version ?? self.version,
-            wrapperType: wrapperType ?? self.wrapperType,
+            resultDescription: resultDescription ?? self.resultDescription,
             artistID: artistID ?? self.artistID,
             artistName: artistName ?? self.artistName,
             genres: genres ?? self.genres,
             price: price ?? self.price,
-            resultDescription: resultDescription ?? self.resultDescription,
             bundleID: bundleID ?? self.bundleID,
+            version: version ?? self.version,
+            wrapperType: wrapperType ?? self.wrapperType,
             averageUserRating: averageUserRating ?? self.averageUserRating,
             userRatingCount: userRatingCount ?? self.userRatingCount,
             sellerURL: sellerURL ?? self.sellerURL

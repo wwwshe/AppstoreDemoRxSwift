@@ -27,10 +27,10 @@ class BeforeSearchViewController: ViewControllerHelper {
       searchController.obscuresBackgroundDuringPresentation = false
       
       tableViewSetting()
-  
+      
       self.navigationItem.searchController = searchController
-  
-
+      
+      
    }
    
    override func viewDidAppear(_ animated: Bool) {
@@ -40,6 +40,15 @@ class BeforeSearchViewController: ViewControllerHelper {
          cell.wordText.text = beforeData.word
          
       }.disposed(by: disposeBag)
+      
+      beforeSearchWordTable.rx.modelSelected(BeforeKeywords.self).subscribe(onNext: { (words) in
+         
+         let word = words.word
+         self.searchController.isActive = true
+         self.searchController.searchBar.text = word
+         self.searchController.searchBar.delegate?.searchBarSearchButtonClicked?( self.searchController.searchBar)
+      }).disposed(by: disposeBag)
+      
    }
    
    
@@ -47,16 +56,5 @@ class BeforeSearchViewController: ViewControllerHelper {
       beforeSearchWordTable.tableFooterView = UIView()
       beforeSearchWordTable.rowHeight = 44
    }
-   
-   
-   /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    // Get the new view controller using segue.destination.
-    // Pass the selected object to the new view controller.
-    }
-    */
    
 }
