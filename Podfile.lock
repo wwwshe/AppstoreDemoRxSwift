@@ -1,5 +1,6 @@
 PODS:
   - CRuntime (2.1.2)
+  - Differentiator (4.0.1)
   - FloatRatingView (4.0)
   - Kingfisher (5.13.0):
     - Kingfisher/Core (= 5.13.0)
@@ -14,6 +15,10 @@ PODS:
   - RxCocoa (5.0.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
   - RxRelay (5.0.1):
     - RxSwift (~> 5)
   - RxSwift (5.0.1)
@@ -25,34 +30,39 @@ DEPENDENCIES:
   - FloatRatingView
   - Kingfisher
   - RxCocoa
+  - RxDataSources
   - RxSwift
   - Unrealm
 
 SPEC REPOS:
   trunk:
     - CRuntime
+    - Differentiator
     - FloatRatingView
     - Kingfisher
     - Realm
     - RealmSwift
     - Runtime
     - RxCocoa
+    - RxDataSources
     - RxRelay
     - RxSwift
     - Unrealm
 
 SPEC CHECKSUMS:
   CRuntime: d7ae373e07ab36e92ad273259557e3817e0c214b
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   FloatRatingView: bb6bdddfbeec51b1d387b4bd50abc27b4dfccd48
   Kingfisher: 0d334cada987fcddbe9b5cec516406e1ee9d4748
   Realm: 7b3d04740facf45e958a514b466a32b04f1113d6
   RealmSwift: c817b5f374668cf08f649afb05f55d92a787649c
   Runtime: 3e42815d18fa3075631768e79f02be2ad7e2b18f
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   Unrealm: 6003d5bcd985a0f365ddf4ecea37be4c395626de
 
-PODFILE CHECKSUM: 14e6967db1f921c888e6e9b2750381e22af9fe00
+PODFILE CHECKSUM: f91b733a9f19acedab7ab5535e194699eafdc8c5
 
 COCOAPODS: 1.8.4

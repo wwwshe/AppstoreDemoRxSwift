@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 import Kingfisher
 
-class SearchListViewController: UIViewController {
+class SearchListViewController: ViewControllerHelper {
     
     @IBOutlet weak var beforeHistoryTableView: UITableView!
     @IBOutlet weak var searchListTable: UITableView!
@@ -47,7 +47,7 @@ class SearchListViewController: UIViewController {
             cell.genreText.text = genreText
             cell.ratingView.rating = result.averageUserRating ?? 0.0
             
-            cell.ratingText.text = self.ratingCountToString(ratingCount: result.userRatingCount ?? 0)
+            cell.ratingText.text = Common.shared.ratingCountToString(ratingCount: result.userRatingCount ?? 0)
             let screenshotUrl1 = URL(string : result.screenshotUrls[0])
             let screenshotUrl2 = URL(string : result.screenshotUrls[1])
             let screenshotUrl3 = URL(string : result.screenshotUrls[2])
@@ -80,25 +80,25 @@ class SearchListViewController: UIViewController {
             searchController.searchBar.delegate?.searchBarSearchButtonClicked?( searchController.searchBar)
         }).disposed(by: disposeBag)
         
+        searchListTable.rx.modelSelected(AppstoreSearchResult.self).subscribe(onNext: { [weak self] (result) in
+            guard let strongSelf = self else {
+                print("self nil")
+                return
+            }
+            print("selected")
+            let controller = strongSelf.getViewController(target: AppDetailViewController.self)
+            controller.resultData = result
+            
+            guard let presentcontroller = strongSelf.presentingViewController else {
+                print("presentcontroller nil")
+                return
+            }
+            guard let navi = presentcontroller.navigationController else {
+                print("navi nil")
+                return
+            }
+            navi.pushViewController(controller, animated: true)
+        }).disposed(by: disposeBag)
     }
-    func ratingCountToString(ratingCount : Int) -> String{
-        guard ratingCount > 1000  else {
-            return String(ratingCount)
-        }
-        let rating = Double(ratingCount)
-        let numberFormatter = NumberFormatter()
-        numberFormatter.roundingMode = .floor         // 형식을 버림으로 지정
-        numberFormatter.minimumSignificantDigits = 2  // 자르길 원하는 자릿수
-        numberFormatter.maximumSignificantDigits = 2
-        
-        if ratingCount > 10000{
-            let div = rating / 10000.0
-            let divString = numberFormatter.string(from: NSNumber(value: div))
-            return divString! + "만"
-        }else{
-            let div = rating / 1000.0
-            let divString = numberFormatter.string(from: NSNumber(value: div))
-            return divString! + "천"
-        }
-    }
+   
 }

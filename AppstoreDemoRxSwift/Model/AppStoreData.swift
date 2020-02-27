@@ -72,11 +72,11 @@ struct AppstoreSearchResult: Codable {
     let trackCensoredName: String
     let languageCodesISO2A: [String]
     let fileSizeBytes: String
-    let contentAdvisoryRating: Rating
+    let contentAdvisoryRating: String
     let averageUserRatingForCurrentVersion: Double?
     let userRatingCountForCurrentVersion: Int?
     let trackViewURL: String
-    let trackContentRating: Rating
+    let trackContentRating: String
     let trackID: Int
     let trackName: String
     let releaseDate: Date
@@ -157,11 +157,11 @@ extension AppstoreSearchResult {
         trackCensoredName: String? = nil,
         languageCodesISO2A: [String]? = nil,
         fileSizeBytes: String? = nil,
-        contentAdvisoryRating: Rating? = nil,
+        contentAdvisoryRating: String? = nil,
         averageUserRatingForCurrentVersion: Double?? = nil,
         userRatingCountForCurrentVersion: Int?? = nil,
         trackViewURL: String? = nil,
-        trackContentRating: Rating? = nil,
+        trackContentRating: String? = nil,
         trackID: Int? = nil,
         trackName: String? = nil,
         releaseDate: Date? = nil,
@@ -242,13 +242,6 @@ extension AppstoreSearchResult {
     func jsonString(encoding: String.Encoding = .utf8) throws -> String? {
         return String(data: try self.jsonData(), encoding: encoding)
     }
-}
-
-enum Rating: String, Codable {
-    case the12 = "12+"
-    case the17 = "17+"
-    case the4 = "4+"
-    case the9 = "9+"
 }
 
 enum Currency: String, Codable {

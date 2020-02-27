@@ -8,6 +8,7 @@ target 'AppstoreDemoRxSwift' do
   # Pods for AppstoreDemoRxSwift
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxDataSources'
   pod 'FloatRatingView'
   pod 'Kingfisher'
   pod 'Unrealm'

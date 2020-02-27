@@ -20,6 +20,11 @@ class BeforeSearchViewController: ViewControllerHelper {
    var searchController : UISearchController!
    override func viewDidLoad() {
       super.viewDidLoad()
+      setController()
+      setRxView()
+   }
+   
+   func setController(){
       listController =  self.getViewController(target: SearchListViewController.self)
       searchController = UISearchController(searchResultsController: listController)
       searchController.searchResultsUpdater = listController
@@ -29,12 +34,9 @@ class BeforeSearchViewController: ViewControllerHelper {
       tableViewSetting()
       
       self.navigationItem.searchController = searchController
-      
-      
    }
    
-   override func viewDidAppear(_ animated: Bool) {
-      super.viewDidAppear(animated)
+   fileprivate func setRxView(){
       viewModel.getBeforeWords().bind(to: beforeSearchWordTable.rx.items(cellIdentifier: BeforeSearchTableCell.reuseCellName, cellType: BeforeSearchTableCell.self)){ _, beforeData, cell in
          
          cell.wordText.text = beforeData.word
