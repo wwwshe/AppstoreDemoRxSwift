@@ -17,12 +17,20 @@ final class AppDetailTableDataSource :  NSObject, RxTableViewDataSourceType, UIT
     
     var infoTitles = ["제공자","크기","카테고리","호완성","언어","연령 등급","저작권"]
     
+    var isInfoCellExpands : [Bool]!
+    var isDescriptionExpand = false
+    var isVersionExpand = false
+    
+    weak var parentViewcontroller : UIViewController? = nil
+    
     func tableView(_ tableView: UITableView, observedEvent: Event<AppstoreSearchResult>) {
         Binder(self) { dataSource, element in
             dataSource.appData = element
             tableView.reloadData()
         }
         .on(observedEvent)
+        isInfoCellExpands = Array(repeating: false, count: self.infoTitles.count)
+        
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 6

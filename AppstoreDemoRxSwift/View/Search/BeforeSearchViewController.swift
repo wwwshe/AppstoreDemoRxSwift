@@ -37,10 +37,8 @@ class BeforeSearchViewController: ViewControllerHelper {
    }
    
    fileprivate func setRxView(){
-      viewModel.getBeforeWords().bind(to: beforeSearchWordTable.rx.items(cellIdentifier: BeforeSearchTableCell.reuseCellName, cellType: BeforeSearchTableCell.self)){ _, beforeData, cell in
-         
+      viewModel.beforeWords.drive(beforeSearchWordTable.rx.items(cellIdentifier: BeforeSearchTableCell.reuseCellName, cellType: BeforeSearchTableCell.self)){ _, beforeData, cell in
          cell.wordText.text = beforeData.word
-         
       }.disposed(by: disposeBag)
       
       beforeSearchWordTable.rx.modelSelected(BeforeKeywords.self).subscribe(onNext: { (words) in
@@ -51,6 +49,11 @@ class BeforeSearchViewController: ViewControllerHelper {
          self.searchController.searchBar.delegate?.searchBarSearchButtonClicked?( self.searchController.searchBar)
       }).disposed(by: disposeBag)
       
+      searchController.searchBar.rx.cancelButtonClicked.subscribe(onNext: { _ in
+         self.viewModel.isRefresh.accept(true)
+      }) {
+         self.viewModel.isRefresh.accept(false)
+      }.disposed(by: disposeBag)
    }
    
    

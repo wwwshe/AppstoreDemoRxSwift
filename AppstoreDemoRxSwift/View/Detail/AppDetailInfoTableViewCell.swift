@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class AppDetailInfoTableViewCell: UITableViewCell {
     
@@ -14,11 +15,15 @@ class AppDetailInfoTableViewCell: UITableViewCell {
     @IBOutlet weak var infoText: UILabel!
     @IBOutlet weak var expandBtn: UIButton!
     @IBOutlet weak var expandLabel: UILabel!
+    
+    @IBOutlet weak var expandTopPadding: NSLayoutConstraint!
+    @IBOutlet weak var expandBottomPadding: NSLayoutConstraint!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

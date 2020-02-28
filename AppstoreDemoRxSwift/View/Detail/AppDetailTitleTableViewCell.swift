@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class AppDetailTitleTableViewCell: UITableViewCell {
 
@@ -18,9 +19,21 @@ class AppDetailTitleTableViewCell: UITableViewCell {
     @IBOutlet weak var installBtn: UIButton!
     @IBOutlet weak var shareBtn: UIButton!
     
+    private(set) var disposeBag = DisposeBag()
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        disposeBag = DisposeBag()
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        installBtn.layer.masksToBounds = true
+        installBtn.layer.cornerRadius = installBtn.frame.height / 2
+        
+        appIcon.layer.cornerRadius = 10
+        appIcon.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

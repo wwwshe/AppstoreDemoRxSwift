@@ -85,7 +85,7 @@ class SearchListViewController: ViewControllerHelper {
                 print("self nil")
                 return
             }
-            print("selected")
+          
             let controller = strongSelf.getViewController(target: AppDetailViewController.self)
             controller.resultData = result
             

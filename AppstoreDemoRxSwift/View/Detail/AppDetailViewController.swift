@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-class AppDetailViewController: UIViewController {
+class AppDetailViewController: ViewControllerHelper {
     
     @IBOutlet weak var appDetailTable: UITableView!
     let disposeBag = DisposeBag()
@@ -30,13 +30,37 @@ class AppDetailViewController: UIViewController {
     }
     
     func tableViewSetting(){
-       appDetailTable.tableFooterView = UIView()
+        appDetailTable.tableFooterView = UIView()
         appDetailTable.rowHeight = UITableView.automaticDimension
     }
     fileprivate func setRxView(){
+        let datasource = AppDetailTableDataSource()
         viewModel.getItem()
-            .bind(to: appDetailTable.rx.items(dataSource: AppDetailTableDataSource()))
+            .bind(to: appDetailTable.rx.items(dataSource: datasource))
             .disposed(by: disposeBag)
+        datasource.parentViewcontroller = self
+        
+        appDetailTable.rx.itemSelected.subscribe(onNext: { indexPath in
+            
+            if indexPath.section == 2{
+             
+                let controller = self.getViewController(target: ImageSlideViewController.self)
+                
+                controller.images = self.viewModel.item?.screenshotUrls ?? [String]()
+                self.navigationController?.pushViewController(controller, animated: true)
+            }
+            
+            if indexPath.section == 5{
+                let isExpand = datasource.isInfoCellExpands[indexPath.row]
+                if isExpand == false {
+                    datasource.isInfoCellExpands[indexPath.row] = !isExpand
+                    self.appDetailTable.beginUpdates()
+                    self.appDetailTable.reloadData()
+                    self.appDetailTable.endUpdates()
+                }
+            }
+ 
+        }).disposed(by: disposeBag)
     }
     
 }

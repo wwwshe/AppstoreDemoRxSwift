@@ -35,6 +35,13 @@ final class Common {
     func setRealmData(){
         Realm.registerRealmables(BeforeKeywords.self)
     }
+    func floorDoubleToString(num : Double, digit : Int) -> String{
+        let numberFormatter = NumberFormatter()
+        numberFormatter.roundingMode = .floor
+        numberFormatter.minimumSignificantDigits = digit
+        numberFormatter.maximumSignificantDigits = digit
+        return numberFormatter.string(from: NSNumber(value: num)) ?? ""
+    }
     
     
     func ratingCountToString(ratingCount : Int) -> String{

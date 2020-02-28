@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import RxSwift
 
 class AppDetailScreenShotTableViewCell: UITableViewCell {
 
     @IBOutlet weak var screenShotCollectionView: UICollectionView!
     
-    
+   private(set) var disposeBag = DisposeBag()
+
+   override func prepareForReuse() {
+      super.prepareForReuse()
+      disposeBag = DisposeBag()
+   }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,5 +29,10 @@ class AppDetailScreenShotTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func getScreenShotUrls(data : AppstoreSearchResult)->Observable<[String]>{
+        return Observable.from(optional: data.screenshotUrls)
+    }
+    
 
 }
