@@ -1,0 +1,2532 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/AppDelegate.swift",
+      "line": 12,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/AppDelegate.swift",
+      "line": 16,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/AppDelegate.swift",
+      "line": 26,
+      "symbol": "AppDelegate.application(_:configurationForConnecting:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/AppDelegate.swift",
+      "line": 32,
+      "symbol": "AppDelegate.application(_:didDiscardSceneSessions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Extension/UICollectionViewCell+Extension.swift",
+      "line": 13,
+      "symbol": "UICollectionViewCell.reuseCellName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Extension/UILabel+Extension.swift",
+      "line": 14,
+      "symbol": "UILabel.countLabelLines()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Extension/UILabel+Extension.swift",
+      "line": 22,
+      "symbol": "UILabel.isTruncated",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Extension/UITableViewCell+Extension.swift",
+      "line": 13,
+      "symbol": "UITableViewCell.reuseCellName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 16,
+      "symbol": "AppStoreData",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 17,
+      "symbol": "AppStoreData.resultCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 18,
+      "symbol": "AppStoreData.results",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 19,
+      "symbol": "AppStoreData.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 20,
+      "symbol": "AppStoreData.CodingKeys.results",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 21,
+      "symbol": "AppStoreData.CodingKeys.resultCount",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 27,
+      "symbol": "AppStoreData",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 28,
+      "symbol": "AppStoreData.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 32,
+      "symbol": "AppStoreData.init(_:using:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 39,
+      "symbol": "AppStoreData.init(fromURL:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 43,
+      "symbol": "AppStoreData.with(resultCount:results:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 53,
+      "symbol": "AppStoreData.jsonData()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 57,
+      "symbol": "AppStoreData.jsonString(encoding:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 63,
+      "symbol": "AppstoreSearchResult",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 64,
+      "symbol": "AppstoreSearchResult.isGameCenterEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 65,
+      "symbol": "AppstoreSearchResult.ipadScreenshotUrls",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 65,
+      "symbol": "AppstoreSearchResult.screenshotUrls",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 66,
+      "symbol": "AppstoreSearchResult.appletvScreenshotUrls",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 67,
+      "symbol": "AppstoreSearchResult.artworkUrl100",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 67,
+      "symbol": "AppstoreSearchResult.artworkUrl512",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 67,
+      "symbol": "AppstoreSearchResult.artworkUrl60",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 68,
+      "symbol": "AppstoreSearchResult.artistViewURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 69,
+      "symbol": "AppstoreSearchResult.advisories",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 69,
+      "symbol": "AppstoreSearchResult.supportedDevices",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 70,
+      "symbol": "AppstoreSearchResult.features",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 71,
+      "symbol": "AppstoreSearchResult.kind",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 72,
+      "symbol": "AppstoreSearchResult.trackCensoredName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 73,
+      "symbol": "AppstoreSearchResult.languageCodesISO2A",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 74,
+      "symbol": "AppstoreSearchResult.fileSizeBytes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 75,
+      "symbol": "AppstoreSearchResult.contentAdvisoryRating",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 76,
+      "symbol": "AppstoreSearchResult.averageUserRatingForCurrentVersion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 77,
+      "symbol": "AppstoreSearchResult.userRatingCountForCurrentVersion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 78,
+      "symbol": "AppstoreSearchResult.trackViewURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 79,
+      "symbol": "AppstoreSearchResult.trackContentRating",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 80,
+      "symbol": "AppstoreSearchResult.trackID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 81,
+      "symbol": "AppstoreSearchResult.trackName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 82,
+      "symbol": "AppstoreSearchResult.releaseDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 83,
+      "symbol": "AppstoreSearchResult.primaryGenreID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 84,
+      "symbol": "AppstoreSearchResult.sellerName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 85,
+      "symbol": "AppstoreSearchResult.currentVersionReleaseDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 86,
+      "symbol": "AppstoreSearchResult.releaseNotes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 87,
+      "symbol": "AppstoreSearchResult.isVppDeviceBasedLicensingEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 88,
+      "symbol": "AppstoreSearchResult.primaryGenreName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 89,
+      "symbol": "AppstoreSearchResult.genreIDS",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 90,
+      "symbol": "AppstoreSearchResult.minimumOSVersion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 91,
+      "symbol": "AppstoreSearchResult.formattedPrice",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 92,
+      "symbol": "AppstoreSearchResult.currency",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 93,
+      "symbol": "AppstoreSearchResult.resultDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 94,
+      "symbol": "AppstoreSearchResult.artistID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 95,
+      "symbol": "AppstoreSearchResult.artistName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 96,
+      "symbol": "AppstoreSearchResult.genres",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 97,
+      "symbol": "AppstoreSearchResult.price",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 98,
+      "symbol": "AppstoreSearchResult.bundleID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 98,
+      "symbol": "AppstoreSearchResult.version",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 99,
+      "symbol": "AppstoreSearchResult.wrapperType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 100,
+      "symbol": "AppstoreSearchResult.averageUserRating",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 101,
+      "symbol": "AppstoreSearchResult.userRatingCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 102,
+      "symbol": "AppstoreSearchResult.sellerURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 104,
+      "symbol": "AppstoreSearchResult.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 105,
+      "symbol": "AppstoreSearchResult.CodingKeys.appletvScreenshotUrls",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 105,
+      "symbol": "AppstoreSearchResult.CodingKeys.artworkUrl100",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 105,
+      "symbol": "AppstoreSearchResult.CodingKeys.artworkUrl512",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 105,
+      "symbol": "AppstoreSearchResult.CodingKeys.artworkUrl60",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 105,
+      "symbol": "AppstoreSearchResult.CodingKeys.ipadScreenshotUrls",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 105,
+      "symbol": "AppstoreSearchResult.CodingKeys.isGameCenterEnabled",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 105,
+      "symbol": "AppstoreSearchResult.CodingKeys.screenshotUrls",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 106,
+      "symbol": "AppstoreSearchResult.CodingKeys.artistViewURL",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 107,
+      "symbol": "AppstoreSearchResult.CodingKeys.advisories",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 107,
+      "symbol": "AppstoreSearchResult.CodingKeys.averageUserRatingForCurrentVersion",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 107,
+      "symbol": "AppstoreSearchResult.CodingKeys.contentAdvisoryRating",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 107,
+      "symbol": "AppstoreSearchResult.CodingKeys.features",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 107,
+      "symbol": "AppstoreSearchResult.CodingKeys.fileSizeBytes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 107,
+      "symbol": "AppstoreSearchResult.CodingKeys.kind",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 107,
+      "symbol": "AppstoreSearchResult.CodingKeys.languageCodesISO2A",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 107,
+      "symbol": "AppstoreSearchResult.CodingKeys.supportedDevices",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 107,
+      "symbol": "AppstoreSearchResult.CodingKeys.trackCensoredName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 107,
+      "symbol": "AppstoreSearchResult.CodingKeys.userRatingCountForCurrentVersion",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 108,
+      "symbol": "AppstoreSearchResult.CodingKeys.trackViewURL",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 109,
+      "symbol": "AppstoreSearchResult.CodingKeys.trackContentRating",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 110,
+      "symbol": "AppstoreSearchResult.CodingKeys.trackID",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 111,
+      "symbol": "AppstoreSearchResult.CodingKeys.releaseDate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 111,
+      "symbol": "AppstoreSearchResult.CodingKeys.trackName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 112,
+      "symbol": "AppstoreSearchResult.CodingKeys.primaryGenreID",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 113,
+      "symbol": "AppstoreSearchResult.CodingKeys.currentVersionReleaseDate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 113,
+      "symbol": "AppstoreSearchResult.CodingKeys.isVppDeviceBasedLicensingEnabled",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 113,
+      "symbol": "AppstoreSearchResult.CodingKeys.primaryGenreName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 113,
+      "symbol": "AppstoreSearchResult.CodingKeys.releaseNotes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 113,
+      "symbol": "AppstoreSearchResult.CodingKeys.sellerName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 114,
+      "symbol": "AppstoreSearchResult.CodingKeys.genreIDS",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 115,
+      "symbol": "AppstoreSearchResult.CodingKeys.minimumOSVersion",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 116,
+      "symbol": "AppstoreSearchResult.CodingKeys.currency",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 116,
+      "symbol": "AppstoreSearchResult.CodingKeys.formattedPrice",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 117,
+      "symbol": "AppstoreSearchResult.CodingKeys.resultDescription",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 118,
+      "symbol": "AppstoreSearchResult.CodingKeys.artistID",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 119,
+      "symbol": "AppstoreSearchResult.CodingKeys.artistName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 119,
+      "symbol": "AppstoreSearchResult.CodingKeys.genres",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 119,
+      "symbol": "AppstoreSearchResult.CodingKeys.price",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 120,
+      "symbol": "AppstoreSearchResult.CodingKeys.bundleID",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 121,
+      "symbol": "AppstoreSearchResult.CodingKeys.averageUserRating",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 121,
+      "symbol": "AppstoreSearchResult.CodingKeys.userRatingCount",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 121,
+      "symbol": "AppstoreSearchResult.CodingKeys.version",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 121,
+      "symbol": "AppstoreSearchResult.CodingKeys.wrapperType",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 122,
+      "symbol": "AppstoreSearchResult.CodingKeys.sellerURL",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 128,
+      "symbol": "AppstoreSearchResult",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 129,
+      "symbol": "AppstoreSearchResult.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 133,
+      "symbol": "AppstoreSearchResult.init(_:using:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 140,
+      "symbol": "AppstoreSearchResult.init(fromURL:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 144,
+      "symbol": "AppstoreSearchResult.with(isGameCenterEnabled:screenshotUrls:ipadScreenshotUrls:appletvScreenshotUrls:artworkUrl60:artworkUrl512:artworkUrl100:artistViewURL:supportedDevices:advisories:features:kind:trackCensoredName:languageCodesISO2A:fileSizeBytes:contentAdvisoryRating:averageUserRatingForCurrentVersion:userRatingCountForCurrentVersion:trackViewURL:trackContentRating:trackID:trackName:releaseDate:primaryGenreID:sellerName:currentVersionReleaseDate:releaseNotes:isVppDeviceBasedLicensingEnabled:primaryGenreName:genreIDS:minimumOSVersion:formattedPrice:currency:resultDescription:artistID:artistName:genres:price:bundleID:version:wrapperType:averageUserRating:userRatingCount:sellerURL:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 238,
+      "symbol": "AppstoreSearchResult.jsonData()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 242,
+      "symbol": "AppstoreSearchResult.jsonString(encoding:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 247,
+      "symbol": "Currency",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 248,
+      "symbol": "Currency.krw",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 251,
+      "symbol": "Feature",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 252,
+      "symbol": "Feature.iosUniversal",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 255,
+      "symbol": "FormattedPrice",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 256,
+      "symbol": "FormattedPrice.무료",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 259,
+      "symbol": "Kind",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 260,
+      "symbol": "Kind.software",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 265,
+      "symbol": "newJSONDecoder()",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 273,
+      "symbol": "newJSONEncoder()",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 283,
+      "symbol": "JSONNull",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 296,
+      "symbol": "JSONNull.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 311,
+      "symbol": "JSONCodingKey",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 312,
+      "symbol": "JSONCodingKey.key",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 331,
+      "symbol": "JSONAny",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 333,
+      "symbol": "JSONAny.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 335,
+      "symbol": "JSONAny.decodingError(forCodingPath:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 340,
+      "symbol": "JSONAny.encodingError(forValue:codingPath:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 345,
+      "symbol": "JSONAny.decode(from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 364,
+      "symbol": "JSONAny.decode(from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 391,
+      "symbol": "JSONAny.decode(from:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 418,
+      "symbol": "JSONAny.decodeArray(from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 427,
+      "symbol": "JSONAny.decodeDictionary(from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 436,
+      "symbol": "JSONAny.encode(to:array:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 460,
+      "symbol": "JSONAny.encode(to:dictionary:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/AppStoreData.swift",
+      "line": 485,
+      "symbol": "JSONAny.encode(to:value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/BeforeKeywords.swift",
+      "line": 12,
+      "symbol": "BeforeKeywords",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/BeforeKeywords.swift",
+      "line": 13,
+      "symbol": "BeforeKeywords.word",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Model/BeforeKeywords.swift",
+      "line": 15,
+      "symbol": "BeforeKeywords.primaryKey()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/SceneDelegate.swift",
+      "line": 11,
+      "symbol": "SceneDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/SceneDelegate.swift",
+      "line": 13,
+      "symbol": "SceneDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/SceneDelegate.swift",
+      "line": 16,
+      "symbol": "SceneDelegate.scene(_:willConnectTo:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/SceneDelegate.swift",
+      "line": 23,
+      "symbol": "SceneDelegate.sceneDidDisconnect(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/SceneDelegate.swift",
+      "line": 30,
+      "symbol": "SceneDelegate.sceneDidBecomeActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/SceneDelegate.swift",
+      "line": 35,
+      "symbol": "SceneDelegate.sceneWillResignActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/SceneDelegate.swift",
+      "line": 40,
+      "symbol": "SceneDelegate.sceneWillEnterForeground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/SceneDelegate.swift",
+      "line": 45,
+      "symbol": "SceneDelegate.sceneDidEnterBackground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Bytes.swift",
+      "line": 12,
+      "symbol": "Bytes",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Bytes.swift",
+      "line": 14,
+      "symbol": "Bytes.bytes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Bytes.swift",
+      "line": 16,
+      "symbol": "Bytes.kilobytes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Bytes.swift",
+      "line": 20,
+      "symbol": "Bytes.megabytes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Bytes.swift",
+      "line": 24,
+      "symbol": "Bytes.gigabytes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Bytes.swift",
+      "line": 28,
+      "symbol": "Bytes.init(bytes:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Bytes.swift",
+      "line": 32,
+      "symbol": "Bytes.getReadableUnit()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Common.swift",
+      "line": 12,
+      "symbol": "Common",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Common.swift",
+      "line": 13,
+      "symbol": "Common.shared",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Common.swift",
+      "line": 15,
+      "symbol": "Common.userDefaults",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Common.swift",
+      "line": 17,
+      "symbol": "Common.setUserDefaultValue(key:value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Common.swift",
+      "line": 20,
+      "symbol": "Common.getUserDefaultValue(key:type:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Common.swift",
+      "line": 27,
+      "symbol": "Common.getUserDefaultArrayValue(key:type:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Common.swift",
+      "line": 35,
+      "symbol": "Common.setRealmData()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Common.swift",
+      "line": 38,
+      "symbol": "Common.floorDoubleToString(num:digit:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Common.swift",
+      "line": 47,
+      "symbol": "Common.ratingCountToString(ratingCount:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Common.swift",
+      "line": 67,
+      "symbol": "Common.reviewRatingCountToString(ratingCount:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Common.swift",
+      "line": 71,
+      "symbol": "Common.dateToAgoDateString(date:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Common.swift",
+      "line": 93,
+      "symbol": "Common.fileSizeToString(size:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Common.swift",
+      "line": 98,
+      "symbol": "Common.deviceName()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Common.swift",
+      "line": 115,
+      "symbol": "Common.getLanguage(languageCode:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/RealmManager.swift",
+      "line": 14,
+      "symbol": "RealmManager.shared",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/RealmManager.swift",
+      "line": 18,
+      "symbol": "RealmManager.setKeywordsData(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/RealmManager.swift",
+      "line": 25,
+      "symbol": "RealmManager.allKeywords()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/RealmManager.swift",
+      "line": 31,
+      "symbol": "RealmManager.selectBeforeWords(word:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Value.swift",
+      "line": 11,
+      "symbol": "BEFORE_VALUES_KEY",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Value.swift",
+      "line": 12,
+      "symbol": "BASE_URL",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/Value.swift",
+      "line": 13,
+      "symbol": "SEARCH_URL",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/ViewControllerLoadHelper.swift",
+      "line": 11,
+      "symbol": "ViewControllerHelper",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/ViewControllerLoadHelper.swift",
+      "line": 13,
+      "symbol": "StoryboardType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/ViewControllerLoadHelper.swift",
+      "line": 14,
+      "symbol": "StoryboardType.main",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/ViewControllerLoadHelper.swift",
+      "line": 17,
+      "symbol": "UIStoryboard.getStoryBoard(type:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/ViewControllerLoadHelper.swift",
+      "line": 21,
+      "symbol": "ViewControllerLoadHelper",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/ViewControllerLoadHelper.swift",
+      "line": 22,
+      "symbol": "ViewControllerLoadHelper.getViewController(target:storyboardType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/ViewControllerLoadHelper.swift",
+      "line": 24,
+      "symbol": "ViewControllerLoadHelper",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/ViewControllerLoadHelper.swift",
+      "line": 25,
+      "symbol": "ViewControllerLoadHelper.getViewController(target:storyboardType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/ViewModelType.swift",
+      "line": 11,
+      "symbol": "ViewModelType",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/ViewModelType.swift",
+      "line": 12,
+      "symbol": "ViewModelType.Input",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/ViewModelType.swift",
+      "line": 13,
+      "symbol": "ViewModelType.Output",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/Utils/ViewModelType.swift",
+      "line": 15,
+      "symbol": "ViewModelType.transform(input:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Common/ImageCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "ImageCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Common/ImageCollectionViewCell.swift",
+      "line": 12,
+      "symbol": "ImageCollectionViewCell.imageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Common/ImageCollectionViewCell.swift",
+      "line": 13,
+      "symbol": "ImageCollectionViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Common/ImageSlideViewController.swift",
+      "line": 13,
+      "symbol": "ImageSlideViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Common/ImageSlideViewController.swift",
+      "line": 14,
+      "symbol": "ImageSlideViewController.collectionView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Common/ImageSlideViewController.swift",
+      "line": 15,
+      "symbol": "ImageSlideViewController.images",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Common/ImageSlideViewController.swift",
+      "line": 16,
+      "symbol": "ImageSlideViewController.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Common/ImageSlideViewController.swift",
+      "line": 17,
+      "symbol": "ImageSlideViewController.buttonItem",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Common/ImageSlideViewController.swift",
+      "line": 19,
+      "symbol": "ImageSlideViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Common/ImageSlideViewController.swift",
+      "line": 28,
+      "symbol": "ImageSlideViewController.setNavigationBar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Common/ImageSlideViewController.swift",
+      "line": 35,
+      "symbol": "ImageSlideViewController.rxSetView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Common/ImageSlideViewController.swift",
+      "line": 53,
+      "symbol": "ImageSlideViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Common/ImageSlideViewController.swift",
+      "line": 54,
+      "symbol": "ImageSlideViewController.collectionView(_:layout:sizeForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailContentTableViewCell.swift",
+      "line": 12,
+      "symbol": "AppDetailContentTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailContentTableViewCell.swift",
+      "line": 13,
+      "symbol": "AppDetailContentTableViewCell.contentLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailContentTableViewCell.swift",
+      "line": 14,
+      "symbol": "AppDetailContentTableViewCell.moreBtn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailContentTableViewCell.swift",
+      "line": 15,
+      "symbol": "AppDetailContentTableViewCell.bag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailContentTableViewCell.swift",
+      "line": 16,
+      "symbol": "AppDetailContentTableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailContentTableViewCell.swift",
+      "line": 21,
+      "symbol": "AppDetailContentTableViewCell.prepareForReuse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailContentTableViewCell.swift",
+      "line": 25,
+      "symbol": "AppDetailContentTableViewCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailInfoTableViewCell.swift",
+      "line": 12,
+      "symbol": "AppDetailInfoTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailInfoTableViewCell.swift",
+      "line": 14,
+      "symbol": "AppDetailInfoTableViewCell.infoTitleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailInfoTableViewCell.swift",
+      "line": 15,
+      "symbol": "AppDetailInfoTableViewCell.infoText",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailInfoTableViewCell.swift",
+      "line": 16,
+      "symbol": "AppDetailInfoTableViewCell.expandBtn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailInfoTableViewCell.swift",
+      "line": 17,
+      "symbol": "AppDetailInfoTableViewCell.expandLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailInfoTableViewCell.swift",
+      "line": 19,
+      "symbol": "AppDetailInfoTableViewCell.expandTopPadding",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailInfoTableViewCell.swift",
+      "line": 20,
+      "symbol": "AppDetailInfoTableViewCell.expandBottomPadding",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailInfoTableViewCell.swift",
+      "line": 22,
+      "symbol": "AppDetailInfoTableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailInfoTableViewCell.swift",
+      "line": 27,
+      "symbol": "AppDetailInfoTableViewCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailRatingTableViewCell.swift",
+      "line": 12,
+      "symbol": "AppDetailRatingTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailRatingTableViewCell.swift",
+      "line": 14,
+      "symbol": "AppDetailRatingTableViewCell.ratingText",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailRatingTableViewCell.swift",
+      "line": 15,
+      "symbol": "AppDetailRatingTableViewCell.ratingView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailRatingTableViewCell.swift",
+      "line": 16,
+      "symbol": "AppDetailRatingTableViewCell.categoryCodeLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailRatingTableViewCell.swift",
+      "line": 17,
+      "symbol": "AppDetailRatingTableViewCell.categoryLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailRatingTableViewCell.swift",
+      "line": 18,
+      "symbol": "AppDetailRatingTableViewCell.ageLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailRatingTableViewCell.swift",
+      "line": 19,
+      "symbol": "AppDetailRatingTableViewCell.ratingCountLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailRatingTableViewCell.swift",
+      "line": 20,
+      "symbol": "AppDetailRatingTableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailRatingTableViewCell.swift",
+      "line": 25,
+      "symbol": "AppDetailRatingTableViewCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailScreenShotTableViewCell.swift",
+      "line": 12,
+      "symbol": "AppDetailScreenShotTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailScreenShotTableViewCell.swift",
+      "line": 14,
+      "symbol": "AppDetailScreenShotTableViewCell.screenShotCollectionView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailScreenShotTableViewCell.swift",
+      "line": 16,
+      "symbol": "AppDetailScreenShotTableViewCell.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailScreenShotTableViewCell.swift",
+      "line": 18,
+      "symbol": "AppDetailScreenShotTableViewCell.prepareForReuse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailScreenShotTableViewCell.swift",
+      "line": 22,
+      "symbol": "AppDetailScreenShotTableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailScreenShotTableViewCell.swift",
+      "line": 27,
+      "symbol": "AppDetailScreenShotTableViewCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailScreenShotTableViewCell.swift",
+      "line": 33,
+      "symbol": "AppDetailScreenShotTableViewCell.getScreenShotUrls(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableDataSource.swift",
+      "line": 13,
+      "symbol": "AppDetailTableDataSource",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableDataSource.swift",
+      "line": 14,
+      "symbol": "AppDetailTableDataSource",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableDataSource.swift",
+      "line": 15,
+      "symbol": "AppDetailTableDataSource.Element",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableDataSource.swift",
+      "line": 16,
+      "symbol": "AppDetailTableDataSource.appData",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableDataSource.swift",
+      "line": 18,
+      "symbol": "AppDetailTableDataSource.infoTitles",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableDataSource.swift",
+      "line": 20,
+      "symbol": "AppDetailTableDataSource.isInfoCellExpands",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableDataSource.swift",
+      "line": 21,
+      "symbol": "AppDetailTableDataSource.isDescriptionExpand",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableDataSource.swift",
+      "line": 22,
+      "symbol": "AppDetailTableDataSource.isVersionExpand",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableDataSource.swift",
+      "line": 24,
+      "symbol": "AppDetailTableDataSource.parentViewcontroller",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableDataSource.swift",
+      "line": 26,
+      "symbol": "AppDetailTableDataSource.tableView(_:observedEvent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableDataSource.swift",
+      "line": 35,
+      "symbol": "AppDetailTableDataSource.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableDataSource.swift",
+      "line": 39,
+      "symbol": "AppDetailTableDataSource.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableDataSource.swift",
+      "line": 59,
+      "symbol": "AppDetailTableDataSource.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableSectionModel.swift",
+      "line": 14,
+      "symbol": "SectionOfAppDetail",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableSectionModel.swift",
+      "line": 16,
+      "symbol": "AppDetailTableSectionModel",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableSectionModel.swift",
+      "line": 17,
+      "symbol": "AppDetailTableSectionModel.detail",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableSectionModel.swift",
+      "line": 20,
+      "symbol": "DetailSectionItem",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableSectionModel.swift",
+      "line": 21,
+      "symbol": "DetailSectionItem.title(info:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableSectionModel.swift",
+      "line": 22,
+      "symbol": "DetailSectionItem.rating(info:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableSectionModel.swift",
+      "line": 23,
+      "symbol": "DetailSectionItem.screenShot(info:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableSectionModel.swift",
+      "line": 24,
+      "symbol": "DetailSectionItem.updateHistory(info:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTableSectionModel.swift",
+      "line": 25,
+      "symbol": "DetailSectionItem.content(info:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTitleTableViewCell.swift",
+      "line": 12,
+      "symbol": "AppDetailTitleTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTitleTableViewCell.swift",
+      "line": 14,
+      "symbol": "AppDetailTitleTableViewCell.appIcon",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTitleTableViewCell.swift",
+      "line": 16,
+      "symbol": "AppDetailTitleTableViewCell.appNameLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTitleTableViewCell.swift",
+      "line": 18,
+      "symbol": "AppDetailTitleTableViewCell.subTitleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTitleTableViewCell.swift",
+      "line": 19,
+      "symbol": "AppDetailTitleTableViewCell.installBtn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTitleTableViewCell.swift",
+      "line": 20,
+      "symbol": "AppDetailTitleTableViewCell.shareBtn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTitleTableViewCell.swift",
+      "line": 22,
+      "symbol": "AppDetailTitleTableViewCell.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTitleTableViewCell.swift",
+      "line": 24,
+      "symbol": "AppDetailTitleTableViewCell.prepareForReuse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTitleTableViewCell.swift",
+      "line": 28,
+      "symbol": "AppDetailTitleTableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailTitleTableViewCell.swift",
+      "line": 39,
+      "symbol": "AppDetailTitleTableViewCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailUpdateContentTableViewCell.swift",
+      "line": 12,
+      "symbol": "AppDetailUpdateContentTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailUpdateContentTableViewCell.swift",
+      "line": 14,
+      "symbol": "AppDetailUpdateContentTableViewCell.versionHistoryBtn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailUpdateContentTableViewCell.swift",
+      "line": 16,
+      "symbol": "AppDetailUpdateContentTableViewCell.agoDateLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailUpdateContentTableViewCell.swift",
+      "line": 18,
+      "symbol": "AppDetailUpdateContentTableViewCell.contentLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailUpdateContentTableViewCell.swift",
+      "line": 20,
+      "symbol": "AppDetailUpdateContentTableViewCell.versionLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailUpdateContentTableViewCell.swift",
+      "line": 21,
+      "symbol": "AppDetailUpdateContentTableViewCell.moreBtn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailUpdateContentTableViewCell.swift",
+      "line": 23,
+      "symbol": "AppDetailUpdateContentTableViewCell.bag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailUpdateContentTableViewCell.swift",
+      "line": 24,
+      "symbol": "AppDetailUpdateContentTableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailUpdateContentTableViewCell.swift",
+      "line": 29,
+      "symbol": "AppDetailUpdateContentTableViewCell.prepareForReuse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailUpdateContentTableViewCell.swift",
+      "line": 34,
+      "symbol": "AppDetailUpdateContentTableViewCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailViewController+Extension.swift",
+      "line": 14,
+      "symbol": "AppDetailTableDataSource.configTitleCell(table:data:atIndex:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailViewController+Extension.swift",
+      "line": 42,
+      "symbol": "AppDetailTableDataSource.configRatingCell(table:data:atIndex:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailViewController+Extension.swift",
+      "line": 56,
+      "symbol": "AppDetailTableDataSource.configScreenShotCell(table:data:atIndex:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailViewController+Extension.swift",
+      "line": 71,
+      "symbol": "AppDetailTableDataSource.configUpdateHistoryCell(table:data:atIndex:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailViewController+Extension.swift",
+      "line": 97,
+      "symbol": "AppDetailTableDataSource.configContentCell(table:data:atIndex:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailViewController+Extension.swift",
+      "line": 128,
+      "symbol": "AppDetailTableDataSource.configInfoCell(table:data:atIndex:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailViewController+Extension.swift",
+      "line": 141,
+      "symbol": "AppDetailTableDataSource.infoExpandView(cell:data:row:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailViewController+Extension.swift",
+      "line": 177,
+      "symbol": "AppDetailTableDataSource.infoDateToString(data:row:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailViewController.swift",
+      "line": 14,
+      "symbol": "AppDetailViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailViewController.swift",
+      "line": 16,
+      "symbol": "AppDetailViewController.appDetailTable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailViewController.swift",
+      "line": 17,
+      "symbol": "AppDetailViewController.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailViewController.swift",
+      "line": 19,
+      "symbol": "AppDetailViewController.resultData",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailViewController.swift",
+      "line": 20,
+      "symbol": "AppDetailViewController.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailViewController.swift",
+      "line": 22,
+      "symbol": "AppDetailViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/AppDetailViewController.swift",
+      "line": 32,
+      "symbol": "AppDetailViewController.tableViewSetting()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/ScreenShotCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "ScreenShotCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/ScreenShotCollectionViewCell.swift",
+      "line": 13,
+      "symbol": "ScreenShotCollectionViewCell.imageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Detail/ScreenShotCollectionViewCell.swift",
+      "line": 15,
+      "symbol": "ScreenShotCollectionViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchHistoryTableViewCell.swift",
+      "line": 11,
+      "symbol": "SearchHistoryTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchHistoryTableViewCell.swift",
+      "line": 13,
+      "symbol": "SearchHistoryTableViewCell.searchWord",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchHistoryTableViewCell.swift",
+      "line": 14,
+      "symbol": "SearchHistoryTableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchHistoryTableViewCell.swift",
+      "line": 19,
+      "symbol": "SearchHistoryTableViewCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchListViewController+Extension.swift",
+      "line": 15,
+      "symbol": "SearchListViewController.updateSearchResults(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchListViewController+Extension.swift",
+      "line": 30,
+      "symbol": "SearchListViewController.searchBarSearchButtonClicked(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchListViewController+Extension.swift",
+      "line": 42,
+      "symbol": "SearchListViewController.searchBarCancelButtonClicked(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchListViewController.swift",
+      "line": 14,
+      "symbol": "SearchListViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchListViewController.swift",
+      "line": 14,
+      "symbol": "SearchListViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchListViewController.swift",
+      "line": 16,
+      "symbol": "SearchListViewController.beforeHistoryTableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchListViewController.swift",
+      "line": 17,
+      "symbol": "SearchListViewController.searchListTable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchListViewController.swift",
+      "line": 19,
+      "symbol": "SearchListViewController.emptyView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchListViewController.swift",
+      "line": 20,
+      "symbol": "SearchListViewController.emptySearchWord",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchListViewController.swift",
+      "line": 23,
+      "symbol": "SearchListViewController.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchListViewController.swift",
+      "line": 24,
+      "symbol": "SearchListViewController.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchListViewController.swift",
+      "line": 25,
+      "symbol": "SearchListViewController.searchText",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchListViewController.swift",
+      "line": 26,
+      "symbol": "SearchListViewController.isEmpty",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchListViewController.swift",
+      "line": 27,
+      "symbol": "SearchListViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchListViewController.swift",
+      "line": 33,
+      "symbol": "SearchListViewController.tableViewSetting()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchListViewController.swift",
+      "line": 41,
+      "symbol": "SearchListViewController.rxSetting()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchResultTableViewCell.swift",
+      "line": 12,
+      "symbol": "SearchResultTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchResultTableViewCell.swift",
+      "line": 13,
+      "symbol": "SearchResultTableViewCell.appIcon",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchResultTableViewCell.swift",
+      "line": 14,
+      "symbol": "SearchResultTableViewCell.appName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchResultTableViewCell.swift",
+      "line": 15,
+      "symbol": "SearchResultTableViewCell.installBtn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchResultTableViewCell.swift",
+      "line": 16,
+      "symbol": "SearchResultTableViewCell.genreText",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchResultTableViewCell.swift",
+      "line": 18,
+      "symbol": "SearchResultTableViewCell.screenShot3",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchResultTableViewCell.swift",
+      "line": 19,
+      "symbol": "SearchResultTableViewCell.screenShot2",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchResultTableViewCell.swift",
+      "line": 20,
+      "symbol": "SearchResultTableViewCell.screenShot1",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchResultTableViewCell.swift",
+      "line": 21,
+      "symbol": "SearchResultTableViewCell.ratingText",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchResultTableViewCell.swift",
+      "line": 22,
+      "symbol": "SearchResultTableViewCell.ratingView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchResultTableViewCell.swift",
+      "line": 23,
+      "symbol": "SearchResultTableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/List/SearchResultTableViewCell.swift",
+      "line": 52,
+      "symbol": "SearchResultTableViewCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Search/BeforeSearchTableCell.swift",
+      "line": 11,
+      "symbol": "BeforeSearchTableCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Search/BeforeSearchTableCell.swift",
+      "line": 12,
+      "symbol": "BeforeSearchTableCell.wordText",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Search/BeforeSearchTableCell.swift",
+      "line": 14,
+      "symbol": "BeforeSearchTableCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Search/BeforeSearchTableCell.swift",
+      "line": 19,
+      "symbol": "BeforeSearchTableCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Search/BeforeSearchViewController.swift",
+      "line": 13,
+      "symbol": "BeforeSearchViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Search/BeforeSearchViewController.swift",
+      "line": 14,
+      "symbol": "BeforeSearchViewController.beforeSearchWordTable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Search/BeforeSearchViewController.swift",
+      "line": 16,
+      "symbol": "BeforeSearchViewController.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Search/BeforeSearchViewController.swift",
+      "line": 17,
+      "symbol": "BeforeSearchViewController.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Search/BeforeSearchViewController.swift",
+      "line": 19,
+      "symbol": "BeforeSearchViewController.listController",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Search/BeforeSearchViewController.swift",
+      "line": 20,
+      "symbol": "BeforeSearchViewController.searchController",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Search/BeforeSearchViewController.swift",
+      "line": 21,
+      "symbol": "BeforeSearchViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Search/BeforeSearchViewController.swift",
+      "line": 27,
+      "symbol": "BeforeSearchViewController.setController()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/View/Search/BeforeSearchViewController.swift",
+      "line": 60,
+      "symbol": "BeforeSearchViewController.tableViewSetting()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/ViewModel/AppDetailViewModel.swift",
+      "line": 13,
+      "symbol": "AppDetailViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/ViewModel/AppDetailViewModel.swift",
+      "line": 14,
+      "symbol": "AppDetailViewModel.item",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/ViewModel/AppDetailViewModel.swift",
+      "line": 16,
+      "symbol": "AppDetailViewModel.getItem()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/ViewModel/BeforeSearchViewModel.swift",
+      "line": 13,
+      "symbol": "BeforeSearchViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/ViewModel/BeforeSearchViewModel.swift",
+      "line": 15,
+      "symbol": "BeforeSearchViewModel.isRefresh",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/ViewModel/BeforeSearchViewModel.swift",
+      "line": 16,
+      "symbol": "BeforeSearchViewModel.beforeWords",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/ViewModel/BeforeSearchViewModel.swift",
+      "line": 23,
+      "symbol": "BeforeSearchViewModel.getBeforeWords()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/ViewModel/SearchListViewModel.swift",
+      "line": 13,
+      "symbol": "SearchListViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/ViewModel/SearchListViewModel.swift",
+      "line": 14,
+      "symbol": "SearchListViewModel.seachText",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/ViewModel/SearchListViewModel.swift",
+      "line": 15,
+      "symbol": "SearchListViewModel.beforeSearchText",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/ViewModel/SearchListViewModel.swift",
+      "line": 17,
+      "symbol": "SearchListViewModel.isEmpty",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/ViewModel/SearchListViewModel.swift",
+      "line": 21,
+      "symbol": "SearchListViewModel.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/ViewModel/SearchListViewModel.swift",
+      "line": 27,
+      "symbol": "SearchListViewModel.beforeWords",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/ViewModel/SearchListViewModel.swift",
+      "line": 33,
+      "symbol": "SearchListViewModel.appstoreDataBy(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/ViewModel/SearchListViewModel.swift",
+      "line": 43,
+      "symbol": "SearchListViewModel.parse(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift/AppstoreDemoRxSwift/ViewModel/SearchListViewModel.swift",
+      "line": 66,
+      "symbol": "SearchListViewModel.getBeforeWords(word:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/junwook/Documents/workspace/AppstoreDemoRxSwift"
+}
