@@ -8,9 +8,9 @@ AppstoreDemoRxSwift
 
 RxSwift          
 RxCocoa          
-RxDataSources    -> 테이블뷰 커스텀 데이터 소스를 위한 라이브러리
-FloatRatingView  -> 별점 표시를 위한 라이브러리
-Kingfisher       -> 이미지 로딩을 위한 라이브러리
-Unrealm          -> struct 데이터 객체를 위한 realm 라이브러리
+RxDataSources    -> 테이블뷰 커스텀 데이터 소스를 위한 라이브러리  
+FloatRatingView  -> 별점 표시를 위한 라이브러리  
+Kingfisher       -> 이미지 로딩을 위한 라이브러리  
+Unrealm          -> struct 데이터 객체를 위한 realm 라이브러리  
 
 -------------------------------
