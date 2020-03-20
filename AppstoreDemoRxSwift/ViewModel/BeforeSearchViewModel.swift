@@ -21,7 +21,7 @@ class BeforeSearchViewModel{
    }()
     
     func getBeforeWords() -> Observable<[BeforeKeywords]>{
-        let realmManager = RealmManager()
+        let realmManager = RealmManager.shared
         let keywords = realmManager.allKeywords()
       
         return Observable.from(optional: keywords)

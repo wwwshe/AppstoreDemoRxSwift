@@ -10,18 +10,21 @@ import Foundation
 import RealmSwift
 
 /// Realm 객체
-class RealmManager{
+final class RealmManager{
     static let shared = RealmManager()
-    
-   
     
     func setKeywordsData(data : String){
         let word = BeforeKeywords(word: data)
         let realm = try! Realm()
-        try! realm.write {
-            realm.add(word, update: .all)
+        do {
+            try realm.write {
+                realm.add(word, update: .all)
+            }
+        } catch  {
+            print("error : \(error)")
         }
     }
+    
     func allKeywords() -> [BeforeKeywords]{
         let realm = try! Realm()
         let objs = realm.objects(BeforeKeywords.self)
@@ -36,7 +39,6 @@ class RealmManager{
 
         if !filterResult.isEmpty{
             let stations = Array(filterResult)
-
             return stations
         }else{
             return []

@@ -11,7 +11,6 @@
 		12675DD823E16992000CF2DD /* BeforeSearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12675DD723E16992000CF2DD /* BeforeSearchTableCell.swift */; };
 		12675DDC23E16A24000CF2DD /* BeforeSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12675DDB23E16A24000CF2DD /* BeforeSearchViewModel.swift */; };
 		12675DE023E16A62000CF2DD /* ViewControllerLoadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12675DDE23E16A62000CF2DD /* ViewControllerLoadHelper.swift */; };
-		12675DE123E16A62000CF2DD /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12675DDF23E16A62000CF2DD /* ViewModelType.swift */; };
 		12675DE323E16C65000CF2DD /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12675DE223E16C65000CF2DD /* Common.swift */; };
 		12675DE623E16EEC000CF2DD /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12675DE523E16EEC000CF2DD /* Value.swift */; };
 		12675DE923E173B5000CF2DD /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12675DE823E173B5000CF2DD /* UITableViewCell+Extension.swift */; };
@@ -74,7 +73,6 @@
 		12675DD723E16992000CF2DD /* BeforeSearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeSearchTableCell.swift; sourceTree = "<group>"; };
 		12675DDB23E16A24000CF2DD /* BeforeSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeSearchViewModel.swift; sourceTree = "<group>"; };
 		12675DDE23E16A62000CF2DD /* ViewControllerLoadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerLoadHelper.swift; sourceTree = "<group>"; };
-		12675DDF23E16A62000CF2DD /* ViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		12675DE223E16C65000CF2DD /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		12675DE523E16EEC000CF2DD /* Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
 		12675DE823E173B5000CF2DD /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
@@ -189,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				12675DDE23E16A62000CF2DD /* ViewControllerLoadHelper.swift */,
-				12675DDF23E16A62000CF2DD /* ViewModelType.swift */,
 				12675DE223E16C65000CF2DD /* Common.swift */,
 				12675DFB23E269E6000CF2DD /* RealmManager.swift */,
 				12675DE523E16EEC000CF2DD /* Value.swift */,
@@ -602,7 +599,6 @@
 				CA4DBB5C2407730300E69816 /* AppDetailViewModel.swift in Sources */,
 				12675E0023E26D8D000CF2DD /* SearchHistoryTableViewCell.swift in Sources */,
 				12675DF323E181CD000CF2DD /* SearchResultTableViewCell.swift in Sources */,
-				12675DE123E16A62000CF2DD /* ViewModelType.swift in Sources */,
 				CA4DBB5224076D8500E69816 /* AppDetailRatingTableViewCell.swift in Sources */,
 				CA4DBB6424077FFE00E69816 /* AppDetailViewController+Extension.swift in Sources */,
 				CA59D2E7240911AA00A66451 /* UILabel+Extension.swift in Sources */,

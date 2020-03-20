@@ -16,8 +16,6 @@ class SearchListViewModel{
    
     var isEmpty = BehaviorRelay(value: false)
    
-    
-    
     lazy var data: Driver<[AppstoreSearchResult]> = {
         
         return  self.seachText.asObservable().throttle(.milliseconds(300), scheduler: MainScheduler.instance).distinctUntilChanged().flatMapLatest({ (word) -> Observable<[AppstoreSearchResult]> in
@@ -25,11 +23,11 @@ class SearchListViewModel{
         }).asDriver(onErrorJustReturn: [])
     }()
     lazy var beforeWords: Driver<[BeforeKeywords]> = {
-        
         return  self.beforeSearchText.asObservable().throttle(.milliseconds(300), scheduler: MainScheduler.instance).distinctUntilChanged().flatMapLatest({ (word) -> Observable<[BeforeKeywords]> in
             return self.getBeforeWords(word: word)
         }).asDriver(onErrorJustReturn: [])
     }()
+    
     func appstoreDataBy(_ word: String) -> Observable<[AppstoreSearchResult]> {
         let urlString = String(format: "\(BASE_URL)\(SEARCH_URL)", word)
    
@@ -40,6 +38,7 @@ class SearchListViewModel{
        
         return URLSession.shared.rx.json(url: url).retry(3).catchErrorJustReturn([]).map(parse)
     }
+    
     func parse(json : Any) -> [AppstoreSearchResult]{
         guard json is [String : Any] else {
             return []
@@ -64,9 +63,8 @@ class SearchListViewModel{
     }
     
     func getBeforeWords(word : String) -> Observable<[BeforeKeywords]>{
-        let realmManager = RealmManager()
+        let realmManager = RealmManager.shared
         let keywords = realmManager.selectBeforeWords(word: word)
-     
         return Observable.from(optional: keywords)
     }
 }

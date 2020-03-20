@@ -29,7 +29,7 @@ extension SearchListViewController : UISearchResultsUpdating, UISearchBarDelegat
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         print("searchBar Click")
-        let realmManger = RealmManager()
+        let realmManger = RealmManager.shared
         realmManger.setKeywordsData(data: searchBar.text!)
         self.viewModel.seachText.accept(searchBar.text!)
         self.searchListTable.isHidden = false

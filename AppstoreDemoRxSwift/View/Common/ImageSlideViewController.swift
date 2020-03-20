@@ -21,8 +21,6 @@ class ImageSlideViewController: UIViewController {
         
         setNavigationBar()
         rxSetView()
-        
-        
     }
     
     func setNavigationBar(){
