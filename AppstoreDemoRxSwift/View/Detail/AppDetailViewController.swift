@@ -48,21 +48,29 @@ final class AppDetailViewController: ViewControllerHelper {
             .drive(onNext: { [weak self] indexPath in
                 guard let self = self else { return }
 
-                if indexPath.section == 2 {
+                let section = indexPath.section
+                let row = indexPath.row
+
+                switch section {
+                case 3:
                     if let controller = self.getViewController(target: ImageSlideViewController.self) {
                         controller.images = self.viewModel.item?.screenshotUrls ?? [String]()
                         self.navigationController?.pushViewController(controller, animated: true)
                     }
-                }
-
-                if indexPath.section == 5 {
-                    let isExpand = datasource.isInfoCellExpands[indexPath.row]
-                    if isExpand == false {
-                        datasource.isInfoCellExpands[indexPath.row] = !isExpand
-                        self.appDetailTable.beginUpdates()
-                        self.appDetailTable.reloadData()
-                        self.appDetailTable.endUpdates()
+                case 5:
+                    if row == 3 {
+                        let isExpand = datasource.isInfoCellExpands[indexPath.row]
+                        if isExpand == false {
+                            datasource.isInfoCellExpands[indexPath.row] = !isExpand
+                            self.appDetailTable.beginUpdates()
+                            self.appDetailTable.reloadSections([indexPath.section],
+                                                               animationStyle: .automatic)
+                            self.appDetailTable.endUpdates()
+                        }
                     }
+
+                default:
+                    break
                 }
             }).disposed(by: disposeBag)
     }

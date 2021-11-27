@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Meo-Tg-4u2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Meo-Tg-4u2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,7 +38,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="DBk-NZ-jWG" firstAttribute="centerX" secondItem="h3N-68-McO" secondAttribute="centerX" id="SVZ-kC-4VV"/>
                                     <constraint firstItem="DBk-NZ-jWG" firstAttribute="centerY" secondItem="h3N-68-McO" secondAttribute="centerY" id="bql-bk-V6K"/>
@@ -44,10 +46,10 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L1l-MA-a8j">
                                 <rect key="frame" x="16" y="44" width="382" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchHistoryTableViewCell" id="zld-xM-Xbt" customClass="SearchHistoryTableViewCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="382" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="382" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zld-xM-Xbt" id="oG3-eY-fVL">
                                             <rect key="frame" x="0.0" y="0.0" width="382" height="43.5"/>
@@ -83,7 +85,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchResultTableViewCell" id="z4a-yY-Yfo" customClass="SearchResultTableViewCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="382" height="390.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="382" height="390.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z4a-yY-Yfo" id="6Fr-kc-rPT">
                                             <rect key="frame" x="0.0" y="0.0" width="382" height="390.5"/>
@@ -102,7 +104,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3z-aa-H6j">
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3z-aa-H6j">
                                                     <rect key="frame" x="296" y="32.5" width="70" height="35"/>
                                                     <color key="backgroundColor" white="0.90123155379999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -204,6 +206,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="HPr-6p-G4V"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HPr-6p-G4V" firstAttribute="bottom" secondItem="L1l-MA-a8j" secondAttribute="bottom" id="0VC-lc-EkN"/>
@@ -219,7 +222,6 @@
                             <constraint firstItem="HPr-6p-G4V" firstAttribute="bottom" secondItem="h3N-68-McO" secondAttribute="bottom" id="oA3-Fq-X0h"/>
                             <constraint firstItem="h3N-68-McO" firstAttribute="top" secondItem="HPr-6p-G4V" secondAttribute="top" id="vop-D1-mgk"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="HPr-6p-G4V"/>
                     </view>
                     <connections>
                         <outlet property="beforeHistoryTableView" destination="L1l-MA-a8j" id="sAP-e5-tim"/>
@@ -251,7 +253,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BeforeSearchTableCell" id="caN-mc-B15" customClass="BeforeSearchTableCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="382" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="382" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="caN-mc-B15" id="92C-g2-1kZ">
                                             <rect key="frame" x="0.0" y="0.0" width="382" height="43.5"/>
@@ -278,6 +280,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="VpE-AW-EBa"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="o8R-FC-K1e" firstAttribute="top" secondItem="yGn-s2-BlC" secondAttribute="bottom" constant="16" id="FTT-ag-Meg"/>
@@ -288,7 +291,6 @@
                             <constraint firstItem="VpE-AW-EBa" firstAttribute="trailing" secondItem="o8R-FC-K1e" secondAttribute="trailing" constant="16" id="ukZ-5l-huH"/>
                             <constraint firstItem="VpE-AW-EBa" firstAttribute="bottom" secondItem="o8R-FC-K1e" secondAttribute="bottom" id="zCr-0a-X9O"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="VpE-AW-EBa"/>
                     </view>
                     <navigationItem key="navigationItem" title="검색" leftItemsSupplementBackButton="YES" id="Ofz-m3-49H"/>
                     <connections>
@@ -312,7 +314,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailTitleTableViewCell" rowHeight="133" id="awW-m7-9UY" customClass="AppDetailTitleTableViewCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="133"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="133"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="awW-m7-9UY" id="OdI-Mn-6Wc">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="133"/>
@@ -337,9 +339,9 @@
                                                     <color key="textColor" white="0.70467122400000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gH-kM-bn3">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gH-kM-bn3">
                                                     <rect key="frame" x="130" y="86" width="60" height="30"/>
-                                                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="I2K-QX-Bzk"/>
                                                     </constraints>
@@ -358,7 +360,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="앱 내 구입" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQV-YX-25F">
                                                     <rect key="frame" x="198" y="94" width="165" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -390,20 +392,20 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailRatingTableViewCell" id="R63-aF-e1u" customClass="AppDetailRatingTableViewCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="161" width="414" height="68.5"/>
+                                        <rect key="frame" x="0.0" y="177.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R63-aF-e1u" id="of9-i2-QV7">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="68.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="평점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goF-pC-2oj">
-                                                    <rect key="frame" x="16" y="16" width="29.5" height="20.5"/>
+                                                    <rect key="frame" x="16" y="16" width="29.5" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <color key="textColor" white="0.70467122400000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPN-2B-la7" customClass="FloatRatingView" customModule="FloatRatingView">
-                                                    <rect key="frame" x="55.5" y="18.5" width="82" height="16"/>
+                                                    <rect key="frame" x="55.5" y="8" width="82" height="16"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="ayp-Hv-hGB"/>
@@ -445,8 +447,8 @@
                                                     <color key="textColor" white="0.70467122400000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.3, 천만개의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNb-1V-L4I">
-                                                    <rect key="frame" x="16" y="40.5" width="121.5" height="12"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="3.3, 천만개의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNb-1V-L4I">
+                                                    <rect key="frame" x="16" y="20" width="121.5" height="8"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" white="0.70467122400000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -488,7 +490,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailScreenShotTableViewCell" rowHeight="500" id="oYe-vW-vTA" customClass="AppDetailScreenShotTableViewCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="229.5" width="414" height="500"/>
+                                        <rect key="frame" x="0.0" y="221.5" width="414" height="500"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oYe-vW-vTA" id="hKg-yp-sKm">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
@@ -544,7 +546,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailContentTableViewCell" rowHeight="158" id="Tdz-Dq-TSe" customClass="AppDetailContentTableViewCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="729.5" width="414" height="158"/>
+                                        <rect key="frame" x="0.0" y="721.5" width="414" height="158"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tdz-Dq-TSe" id="uya-Uy-94e">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="158"/>
@@ -556,7 +558,7 @@
                                                     <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2M-Ia-Hxh">
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2M-Ia-Hxh">
                                                     <rect key="frame" x="357" y="113" width="41" height="29"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="더 보기"/>
@@ -577,7 +579,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailUpdateContentTableViewCell" rowHeight="158" id="QcP-DQ-Tx1" customClass="AppDetailUpdateContentTableViewCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="887.5" width="414" height="158"/>
+                                        <rect key="frame" x="0.0" y="879.5" width="414" height="158"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QcP-DQ-Tx1" id="cjE-V3-Yns">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="158"/>
@@ -620,7 +622,7 @@
                                                     <color key="textColor" white="0.70467122400000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tn5-bw-fjO">
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tn5-bw-fjO">
                                                     <rect key="frame" x="360" y="113" width="38" height="28"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <state key="normal" title="더 보기"/>
@@ -657,7 +659,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppDetailInfoTableViewCell" id="tP7-My-36a" customClass="AppDetailInfoTableViewCell" customModule="AppstoreDemoRxSwift" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1045.5" width="414" height="76"/>
+                                        <rect key="frame" x="0.0" y="1037.5" width="414" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tP7-My-36a" id="Fsc-aU-Oxf">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
@@ -682,14 +684,14 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJW-Hv-MHr">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="22"/>
+                                                                    <rect key="frame" x="328" y="0.0" width="0.0" height="22"/>
                                                                     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <state key="normal" image="chevron.down" catalog="system"/>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="ucb-7b-j87" secondAttribute="trailing" constant="16" id="0Z1-Pf-UTn"/>
                                                         <constraint firstItem="rIN-dU-793" firstAttribute="centerY" secondItem="Rx3-g9-q2D" secondAttribute="centerY" id="5gs-rp-THN"/>
@@ -709,7 +711,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="VIv-ck-AF7" secondAttribute="bottom" constant="10" id="EpL-VK-D54"/>
                                                         <constraint firstAttribute="trailing" secondItem="VIv-ck-AF7" secondAttribute="trailing" id="Pz1-WN-U27"/>
@@ -750,6 +752,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="XZ5-Iu-4ey"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hfc-3w-cav" firstAttribute="leading" secondItem="XZ5-Iu-4ey" secondAttribute="leading" id="PvD-HB-8Qx"/>
@@ -757,7 +760,6 @@
                             <constraint firstItem="hfc-3w-cav" firstAttribute="top" secondItem="XZ5-Iu-4ey" secondAttribute="top" id="cds-34-ba6"/>
                             <constraint firstItem="XZ5-Iu-4ey" firstAttribute="trailing" secondItem="hfc-3w-cav" secondAttribute="trailing" id="ekQ-DT-l4L"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="XZ5-Iu-4ey"/>
                     </view>
                     <connections>
                         <outlet property="appDetailTable" destination="hfc-3w-cav" id="lvM-tE-qXN"/>
@@ -810,6 +812,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZcI-kd-mCA"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ZcI-kd-mCA" firstAttribute="bottom" secondItem="gYo-h2-mnf" secondAttribute="bottom" id="Jcx-zI-Lt0"/>
@@ -817,7 +820,6 @@
                             <constraint firstItem="ZcI-kd-mCA" firstAttribute="trailing" secondItem="gYo-h2-mnf" secondAttribute="trailing" id="faE-PE-SKJ"/>
                             <constraint firstItem="gYo-h2-mnf" firstAttribute="top" secondItem="ZcI-kd-mCA" secondAttribute="top" id="sA1-zw-NSH"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ZcI-kd-mCA"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="gYo-h2-mnf" id="BcD-gz-nOj"/>
@@ -847,10 +849,19 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chevron.down" catalog="system" width="64" height="36"/>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="ic_star_empty_s" width="11" height="11"/>
         <image name="ic_star_full_s" width="11" height="11"/>
         <image name="search" width="16" height="16"/>
-        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

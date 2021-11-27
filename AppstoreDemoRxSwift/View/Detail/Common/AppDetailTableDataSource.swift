@@ -62,16 +62,15 @@ final class AppDetailTableDataSource: NSObject, RxTableViewDataSourceType, UITab
 
         switch indexPath.section {
         case 0:
-
             return self.configTitleCell(table: tableView, data: data, atIndex: indexPath)
         case 1:
             return self.configRatingCell(table: tableView, data: data, atIndex: indexPath)
         case 2:
-            return self.configScreenShotCell(table: tableView, data: data, atIndex: indexPath)
-        case 3:
-            return self.configContentCell(table: tableView, data: data, atIndex: indexPath)
-        case 4:
             return self.configUpdateHistoryCell(table: tableView, data: data, atIndex: indexPath)
+        case 3:
+            return self.configScreenShotCell(table: tableView, data: data, atIndex: indexPath)
+        case 4:
+            return self.configContentCell(table: tableView, data: data, atIndex: indexPath)
         case 5:
             return self.configInfoCell(table: tableView, data: data, atIndex: indexPath)
         default:
