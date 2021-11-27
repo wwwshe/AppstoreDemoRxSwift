@@ -20,41 +20,39 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+#if canImport(CRuntime)
 import CRuntime
+#endif
 
 /// https://github.com/apple/swift/blob/f2c42509628bed66bf5b8ee02fae778a2ba747a1/include/swift/Reflection/Records.h#L160
 struct FieldDescriptor {
-    
+
     var mangledTypeNameOffset: Int32
     var superClassOffset: Int32
     var _kind: UInt16
     var fieldRecordSize: Int16
     var numFields: Int32
     var fields: Vector<FieldRecord>
-    
+
     var kind: FieldDescriptorKind {
         return FieldDescriptorKind(rawValue: _kind)!
     }
 }
 
 struct FieldRecord {
-    
+
     var fieldRecordFlags: Int32
     var _mangledTypeName: RelativePointer<Int32, Int8>
     var _fieldName: RelativePointer<Int32, UInt8>
-    
+
     var isVar: Bool {
         return (fieldRecordFlags & 0x2) == 0x2
     }
-    
+
     mutating func fieldName() -> String {
         return String(cString: _fieldName.advanced())
     }
-    
-    mutating func mangedTypeName() -> String {
-        return String(cString: _mangledTypeName.advanced())
-    }
-    
+
     mutating func type(genericContext: UnsafeRawPointer?,
                        genericArguments: UnsafeRawPointer?) -> Any.Type {
         let typeName = _mangledTypeName.advanced()
@@ -64,10 +62,10 @@ struct FieldRecord {
             genericContext,
             genericArguments?.assumingMemoryBound(to: Optional<UnsafeRawPointer>.self)
         )!
-        
+
         return unsafeBitCast(metadataPtr, to: Any.Type.self)
     }
-    
+
     func getSymbolicMangledNameLength(_ base: UnsafeRawPointer) -> Int32 {
         var end = base
         while let current = Optional(end.load(as: UInt8.self)), current != 0 {
@@ -78,7 +76,7 @@ struct FieldRecord {
                 end += MemoryLayout<Int>.size
             }
         }
-        
+
         return Int32(end - base)
     }
 }

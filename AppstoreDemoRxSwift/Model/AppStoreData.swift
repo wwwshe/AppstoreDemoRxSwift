@@ -17,9 +17,9 @@ struct AppStoreData: Codable {
     let resultCount: Int
     let results: [AppstoreSearchResult]
     enum CodingKeys: String, CodingKey {
-         case results = "results"
-         case resultCount
-       }
+        case results
+        case resultCount
+    }
 }
 
 // MARK: AppStoreData convenience initializers and mutators
@@ -61,7 +61,7 @@ extension AppStoreData {
 
 // MARK: - Result
 struct AppstoreSearchResult: Codable {
-   let isGameCenterEnabled: Bool
+    let isGameCenterEnabled: Bool
     let screenshotUrls, ipadScreenshotUrls: [String]
     let appletvScreenshotUrls: [JSONAny]
     let artworkUrl60, artworkUrl512, artworkUrl100: String
@@ -104,13 +104,19 @@ struct AppstoreSearchResult: Codable {
     enum CodingKeys: String, CodingKey {
         case isGameCenterEnabled, screenshotUrls, ipadScreenshotUrls, appletvScreenshotUrls, artworkUrl60, artworkUrl512, artworkUrl100
         case artistViewURL = "artistViewUrl"
-        case supportedDevices, advisories, features, kind, trackCensoredName, languageCodesISO2A, fileSizeBytes, contentAdvisoryRating, averageUserRatingForCurrentVersion, userRatingCountForCurrentVersion
+        case supportedDevices, advisories,
+             features, kind,
+             trackCensoredName, languageCodesISO2A,
+             fileSizeBytes, contentAdvisoryRating,
+             averageUserRatingForCurrentVersion, userRatingCountForCurrentVersion
         case trackViewURL = "trackViewUrl"
         case trackContentRating
         case trackID = "trackId"
         case trackName, releaseDate
         case primaryGenreID = "primaryGenreId"
-        case sellerName, currentVersionReleaseDate, releaseNotes, isVppDeviceBasedLicensingEnabled, primaryGenreName
+        case sellerName, currentVersionReleaseDate,
+             releaseNotes, isVppDeviceBasedLicensingEnabled,
+             primaryGenreName
         case genreIDS = "genreIds"
         case minimumOSVersion = "minimumOsVersion"
         case formattedPrice, currency
@@ -118,7 +124,8 @@ struct AppstoreSearchResult: Codable {
         case artistID = "artistId"
         case artistName, genres, price
         case bundleID = "bundleId"
-        case version, wrapperType, averageUserRating, userRatingCount
+        case version, wrapperType,
+             averageUserRating, userRatingCount
         case sellerURL = "sellerUrl"
     }
 }
@@ -249,15 +256,15 @@ enum Currency: String, Codable {
 }
 
 enum Feature: String, Codable {
-    case iosUniversal = "iosUniversal"
+    case iosUniversal
 }
 
 enum FormattedPrice: String, Codable {
-    case 무료 = "무료"
+    case 무료
 }
 
 enum Kind: String, Codable {
-    case software = "software"
+    case software
 }
 
 // MARK: - Helper functions for creating encoders and decoders
@@ -286,9 +293,6 @@ class JSONNull: Codable, Hashable {
         return true
     }
 
-    public var hashValue: Int {
-        return 0
-    }
     public func hash(into hasher: inout Hasher) {
         // No-op
     }

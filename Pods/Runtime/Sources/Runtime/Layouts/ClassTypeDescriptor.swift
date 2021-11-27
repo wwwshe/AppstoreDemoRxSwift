@@ -33,14 +33,14 @@ struct ClassTypeDescriptor: TypeDescriptor {
     var numberOfFields: Int32
     var offsetToTheFieldOffsetVector: RelativeVectorPointer<Int32, Int>
     var genericContextHeader: TargetTypeGenericContextDescriptorHeader
-    
+
     struct NegativeSizeAndBoundsUnion: Union {
         var raw: Int32
-        
+
         var metadataNegativeSizeInWords: Int32 {
             return raw
         }
-        
+
         mutating func resilientMetadataBounds() -> UnsafeMutablePointer<RelativePointer<Int32, TargetStoredClassMetadataBounds>> {
             return bind()
         }

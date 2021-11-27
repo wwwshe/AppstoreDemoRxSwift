@@ -21,58 +21,58 @@
 // SOFTWARE.
 
 protocol NominalMetadataType: MetadataType where Layout: NominalMetadataLayoutType {
-    
+
     /// The offset of the generic type vector in pointer sized words from the
     /// start of the metadata record.
     var genericArgumentOffset: Int { get }
 }
 
 extension NominalMetadataType {
-    
+
     var genericArgumentOffset: Int {
         // default to 2. This would put it right after the type descriptor which is valid
         // for all types except for classes
         return 2
     }
-    
+
     var isGeneric: Bool {
         return (pointer.pointee.typeDescriptor.pointee.flags & 0x80) != 0
     }
-    
+
     mutating func mangledName() -> String {
         return String(cString: pointer.pointee.typeDescriptor.pointee.mangledName.advanced())
     }
-    
+
     mutating func numberOfFields() -> Int {
-        return pointer.pointee.typeDescriptor.pointee.numberOfFields.getInt()
+        return Int(pointer.pointee.typeDescriptor.pointee.numberOfFields)
     }
-    
+
     mutating func fieldOffsets() -> [Int] {
         return pointer.pointee.typeDescriptor.pointee
             .offsetToTheFieldOffsetVector
             .vector(metadata: pointer.raw.assumingMemoryBound(to: Int.self), n: numberOfFields())
-            .map { $0.getInt() }
+            .map(numericCast)
     }
-    
+
     mutating func properties() -> [PropertyInfo] {
         let offsets = fieldOffsets()
         let fieldDescriptor = pointer.pointee.typeDescriptor.pointee
             .fieldDescriptor
             .advanced()
-        
+
         let genericVector = genericArgumentVector()
-        
+
         return (0..<numberOfFields()).map { i in
             let record = fieldDescriptor
                 .pointee
                 .fields
                 .element(at: i)
-            
+
             return PropertyInfo(
                 name: record.pointee.fieldName(),
                 type: record.pointee.type(
                     genericContext: pointer.pointee.typeDescriptor,
-                    genericArguments: genericVector.pointee.element(at: 0)
+                    genericArguments: genericVector
                 ),
                 isVar: record.pointee.isVar,
                 offset: offsets[i],
@@ -80,27 +80,22 @@ extension NominalMetadataType {
             )
         }
     }
-    
-    func genericArguments() -> [Any.Type] {
-        guard isGeneric else { return [] }
-        
-        let genericHeader = pointer.pointee
+
+    func genericArguments() -> UnsafeMutableBufferPointer<Any.Type> {
+        guard isGeneric else { return .init(start: nil, count: 0) }
+
+        let count = pointer.pointee
             .typeDescriptor
             .pointee
             .genericContextHeader
-        
-        guard genericHeader.base.numberOfParams > 0 else { return [] }
-        
-        let vector = genericArgumentVector()
-        
-        return (0..<Int(genericHeader.base.numberOfParams)).map { i in
-            return vector.pointee.element(at: i).pointee
-        }
+            .base
+            .numberOfParams
+        return genericArgumentVector().buffer(n: Int(count))
     }
-    
-    func genericArgumentVector() -> UnsafeMutablePointer<Vector<Any.Type>> {
+
+    func genericArgumentVector() -> UnsafeMutablePointer<Any.Type> {
         return pointer
             .advanced(by: genericArgumentOffset, wordSize: MemoryLayout<UnsafeRawPointer>.size)
-            .assumingMemoryBound(to: Vector<Any.Type>.self)
+            .assumingMemoryBound(to: Any.Type.self)
     }
 }

@@ -20,53 +20,51 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import Foundation
-
 protocol MetadataInfo {
-    
+
     var kind: Kind { get }
     var size: Int { get }
     var alignment: Int { get }
     var stride: Int { get }
-    
+
     init(type: Any.Type)
 }
 
 protocol MetadataType: MetadataInfo, TypeInfoConvertible {
-    
+
     associatedtype Layout: MetadataLayoutType
-    
+
     var pointer: UnsafeMutablePointer<Layout> { get set }
-    
+
     init(pointer: UnsafeMutablePointer<Layout>)
 }
 
 extension MetadataType {
-    
+
     init(type: Any.Type) {
         self = Self(pointer: unsafeBitCast(type, to: UnsafeMutablePointer<Layout>.self))
     }
-    
+
     var type: Any.Type {
         return unsafeBitCast(pointer, to: Any.Type.self)
     }
-    
+
     var kind: Kind {
         return Kind(flag: pointer.pointee._kind)
     }
-    
+
     var size: Int {
         return valueWitnessTable.pointee.size
     }
-    
+
     var alignment: Int {
         return (valueWitnessTable.pointee.flags & ValueWitnessFlags.alignmentMask) + 1
     }
-    
+
     var stride: Int {
         return valueWitnessTable.pointee.stride
     }
-    
+
     /// The ValueWitnessTable for the type.
     /// A pointer to the table is located one pointer sized word behind the metadata pointer.
     var valueWitnessTable: UnsafeMutablePointer<ValueWitnessTable> {
@@ -76,7 +74,7 @@ extension MetadataType {
             .assumingMemoryBound(to: UnsafeMutablePointer<ValueWitnessTable>.self)
             .pointee
     }
-    
+
     mutating func toTypeInfo() -> TypeInfo {
         return TypeInfo(metadata: self)
     }

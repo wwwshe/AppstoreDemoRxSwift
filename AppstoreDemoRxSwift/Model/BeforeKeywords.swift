@@ -9,9 +9,9 @@
 import Foundation
 import Unrealm
 
-struct BeforeKeywords : Realmable {
-    var word : String = ""
-    
+struct BeforeKeywords: Realmable {
+    var word: String = ""
+
     static func primaryKey() -> String? {
         return "word"
     }

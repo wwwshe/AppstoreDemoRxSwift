@@ -9,10 +9,8 @@
 import Foundation
 import UIKit
 
-extension UICollectionViewCell{
-    static var reuseCellName : String{
-        get{
-            return "\(String(describing: self))"
-        }
+extension UICollectionViewCell {
+    static var reuseCellName: String {
+        return "\(String(describing: self))"
     }
 }

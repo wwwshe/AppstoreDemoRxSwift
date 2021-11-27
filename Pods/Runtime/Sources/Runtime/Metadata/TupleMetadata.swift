@@ -19,29 +19,26 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
-import Foundation
 
 struct TupleMetadata: MetadataType, TypeInfoConvertible {
-    
+
     var pointer: UnsafeMutablePointer<TupleMetadataLayout>
- 
+
     func numberOfElements() -> Int {
         return pointer.pointee.numberOfElements
     }
-    
+
     func labels() -> [String] {
         guard Int(bitPattern: pointer.pointee.labelsString) != 0 else { return (0..<numberOfElements()).map { _ in "" } }
         var labels = String(cString: pointer.pointee.labelsString).components(separatedBy: " ")
         labels.removeLast()
         return labels
     }
-    
-    func elements() -> [TupleElementLayout] {
-        let n = numberOfElements()
-        guard n > 0 else { return [] }
-        return pointer.pointee.elementVector.vector(n: n)
+
+    func elements() -> UnsafeBufferPointer<TupleElementLayout> {
+        return pointer.pointee.elementVector.vector(n: numberOfElements())
     }
-    
+
     func properies() -> [PropertyInfo] {
         let names = labels()
         let el = elements()
@@ -52,7 +49,7 @@ struct TupleMetadata: MetadataType, TypeInfoConvertible {
         }
         return properties
     }
-    
+
     mutating func toTypeInfo() -> TypeInfo {
         var info = TypeInfo(metadata: self)
         info.properties = properies()

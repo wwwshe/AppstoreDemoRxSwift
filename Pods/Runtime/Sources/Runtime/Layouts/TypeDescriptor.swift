@@ -21,11 +21,11 @@
 // SOFTWARE.
 
 protocol TypeDescriptor {
-    
+
     /// The offset type can differ between TypeDescriptors
     /// e.g. Struct are an Int32 and classes are an Int
-    associatedtype FieldOffsetVectorOffsetType: IntegerConvertible
-    
+    associatedtype FieldOffsetVectorOffsetType: FixedWidthInteger
+
     var flags: ContextDescriptorFlags { get set }
     var mangledName: RelativePointer<Int32, CChar> { get set }
     var fieldDescriptor: RelativePointer<Int32, FieldDescriptor> { get set }

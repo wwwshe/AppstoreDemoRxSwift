@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '13.0'
 
 target 'AppstoreDemoRxSwift' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -9,17 +9,8 @@ target 'AppstoreDemoRxSwift' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxDataSources'
-  pod 'FloatRatingView'
-  pod 'Kingfisher'
+  pod 'FloatRatingView', '~> 4'
+  pod 'Kingfisher', '~> 7.0'
   pod 'Unrealm'
-
-  target 'AppstoreDemoRxSwiftTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'AppstoreDemoRxSwiftUITests' do
-    # Pods for testing
-  end
 
 end

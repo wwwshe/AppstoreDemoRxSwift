@@ -20,8 +20,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import Foundation
-
 struct ClassHeader {
     var isaPointer: Int
     var strongRetainCounts: Int32
@@ -29,7 +27,7 @@ struct ClassHeader {
 }
 
 extension ClassHeader {
-    
+
     static func size() -> Int {
         return MemoryLayout<ClassHeader>.size
     }

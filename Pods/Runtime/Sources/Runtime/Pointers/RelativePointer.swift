@@ -20,19 +20,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import Foundation
-
-struct RelativePointer<Offset: IntegerConvertible, Pointee> {
+struct RelativePointer<Offset: FixedWidthInteger, Pointee> {
     var offset: Offset
-    
+
     mutating func pointee() -> Pointee {
         return advanced().pointee
     }
-    
+
     mutating func advanced() -> UnsafeMutablePointer<Pointee> {
-        let offsetCopy = self.offset
+        let offset = self.offset
         return withUnsafePointer(to: &self) { p in
-            return p.raw.advanced(by: offsetCopy.getInt()).assumingMemoryBound(to: Pointee.self).mutable
+            return p.raw.advanced(by: numericCast(offset))
+                .assumingMemoryBound(to: Pointee.self)
+                .mutable
         }
     }
 }

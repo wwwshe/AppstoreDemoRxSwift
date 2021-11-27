@@ -20,8 +20,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import Foundation
-
 public enum Kind {
     case `struct`
     case `enum`
@@ -71,12 +69,12 @@ public enum Kind {
         default: self = .class
         }
     }
-    
+
     init(type: Any.Type) {
         let pointer = metadataPointer(type: type)
         self.init(flag: pointer.pointee)
     }
-    
+
     struct Flags {
         static let kindIsNonHeap = 0x200
         static let kindIsRuntimePrivate = 0x100

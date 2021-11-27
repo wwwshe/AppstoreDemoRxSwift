@@ -6,7 +6,7 @@
 
 <p align="center">
 <a href="https://developer.apple.com/swift/">
-<img src="https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat" alt="Swift 5.0">
+<img src="https://img.shields.io/badge/Swift-5.1-orange.svg?style=flat" alt="Swift 5.1">
 </a>
 <a href="https://travis-ci.com/arturdev/Unrealm">
 <img src="https://travis-ci.com/arturdev/Unrealm.svg?branch=master" alt="Build Status">
@@ -14,13 +14,16 @@
 <a href="https://cocoapods.org/pods/Unrealm">
 <img src="https://img.shields.io/cocoapods/v/Unrealm.svg?style=flat" alt="Version">
 </a>
-<img src="https://img.shields.io/badge/spm-v0.2.4-orange.svg?style=flat" alt="Platform">
+<img src="https://img.shields.io/badge/spm-v0.2.5-orange.svg?style=flat" alt="Platform">
 <a href="https://cocoapods.org/pods/Unrealm">
 <img src="https://img.shields.io/cocoapods/l/Unrealm.svg?style=flat" alt="License">
 </a>
 <a href="https://cocoapods.org/pods/Unrealm">
 <img src="https://img.shields.io/cocoapods/p/Unrealm.svg?style=flat" alt="Platform">
 </a>
+<a href="https://github.com/realm/realm-cocoa/releases/tag/v10.7.4">
+<img src="https://img.shields.io/badge/RealmCocoa-v10.7.4-green?style=flat" alt="Platform">
+</a> 
 </p>
 
 <br/>
@@ -45,9 +48,12 @@ Unrealm supports the following types:
 - [x] Swift Enums
 - [x] Swift Arrays
 - [x] Swift Dictionaries
-- [x] Swift Optionals (String, Data, Date)
 - [x] Nested Classes/Structs
+- [x] Swift Optionals (String, Data, Date)
 - [x] Swift Optionals of primitives (Int, Float, Double, Bool)
+- [x] Swift Optionals of Realmables
+- [x] Swift Optionals of Arrays
+- [x] Swift Arrays of enums
 
 
 ## Example Project
@@ -57,7 +63,7 @@ See also <a href="https://github.com/arturdev/Unrealm/blob/master/Example/Tests/
 ## Usage
 All you have to do is 
 1. Conform your Classes/Structs to `Realmable` protocol instead of inheriting from `Object`. Conform your Enums to `RealmableEnum` protocol.
-2. Register your Classes/Structs in AppDelegate's `didFinishLaunchingWithOptions`.
+2. Register your Classes/Structs and Enums in AppDelegate's `didFinishLaunchingWithOptions`.
 ```Swift
 Realm.registerRealmables(ToDoItem.self)
 ```
@@ -72,6 +78,7 @@ Thats it! Now you can store your Struct or Class object into Realm as usualy you
 - Getting rid of Realm crashes like "Realm accessed from incorrect thread"
 - Getting rid of boilerplate code such as `@objc dynamic var`. Use just `var` or `let`
 - Getting rid of boilerplate code such as `RealmOptional<Int>`. Use just `Int?`
+- Works perfect with Swift's Codable and optional types!
 
 #### Cons 🍟
 - Losing "Live Objects" feature. Which means when you modify an object got from Realm the other ones will not be updated automatically. So after modifying an object you should manually update it in realm.
@@ -101,15 +108,17 @@ You can also use Swift Package Manager to add Unrealm as a dependency to your pr
 ```bash
 https://github.com/arturdev/Unrealm.git
 ```
-
-You will also need to set your desired version or branch (e.g. master).
-
+You need to use "SPM" branch instead of master.
 ## ToDos
 
 - Add more UnitTests
 - Create a sample project for Swift Package Manager when dependencies can be added to many targets in a simple project.
 
 ## Contribution
+
+⭐️ If you like what you see, star us on GitHub.
+
+Find a bug, a typo, or something that’s not documented well? We’d love for you to open an issue telling me what I can improve!
 
 Contributions are welcome, and they are greatly appreciated!
 

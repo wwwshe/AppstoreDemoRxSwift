@@ -20,14 +20,12 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import Foundation
-
-struct RelativeVectorPointer<Offset: IntegerConvertible, Pointee> {
+struct RelativeVectorPointer<Offset: FixedWidthInteger, Pointee> {
     var offset: Offset
-    mutating func vector(metadata: UnsafePointer<Int>, n: IntegerConvertible) -> [Pointee] {
-        return metadata.advanced(by: offset.getInt())
+    mutating func vector(metadata: UnsafePointer<Int>, n: Int) -> UnsafeBufferPointer<Pointee> {
+        return metadata.advanced(by: numericCast(offset))
             .raw.assumingMemoryBound(to: Pointee.self)
-            .vector(n: n.getInt())
+            .buffer(n: n)
     }
 }
 

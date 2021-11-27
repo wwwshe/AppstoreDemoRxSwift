@@ -20,8 +20,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import Foundation
-
 protocol Getters {}
 extension Getters {
     static func get(from pointer: UnsafeRawPointer) -> Any {
@@ -36,9 +34,14 @@ func getters(type: Any.Type) -> Getters.Type {
 
 protocol Setters {}
 extension Setters {
-    static func set(value: Any, pointer: UnsafeMutableRawPointer) {
+    static func set(value: Any, pointer: UnsafeMutableRawPointer, initialize: Bool = false) {
         if let value = value as? Self {
-            pointer.assumingMemoryBound(to: self).initialize(to: value)
+            let boundPointer = pointer.assumingMemoryBound(to: self)
+            if initialize {
+                boundPointer.initialize(to: value)
+            } else {
+                boundPointer.pointee = value
+            }
         }
     }
 }

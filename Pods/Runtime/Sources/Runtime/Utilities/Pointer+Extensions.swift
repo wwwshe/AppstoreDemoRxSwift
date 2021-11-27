@@ -20,24 +20,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import Foundation
-
 extension UnsafePointer {
-    
+
     var raw: UnsafeRawPointer {
         return UnsafeRawPointer(self)
     }
-    
+
     var mutable: UnsafeMutablePointer<Pointee> {
         return UnsafeMutablePointer<Pointee>(mutating: self)
     }
-    
-    func vector(n: IntegerConvertible) -> [Pointee] {
-        var result = [Pointee]()
-        for i in 0..<n.getInt() {
-            result.append(advanced(by: i).pointee)
-        }
-        return result
+
+    func buffer(n: Int) -> UnsafeBufferPointer<Pointee> {
+        return UnsafeBufferPointer(start: self, count: n)
     }
 }
 
@@ -52,19 +46,15 @@ extension UnsafePointer where Pointee: Equatable {
 }
 
 extension UnsafeMutablePointer {
-    
+
     var raw: UnsafeMutableRawPointer {
         return UnsafeMutableRawPointer(self)
     }
-    
-    func vector(n: IntegerConvertible) -> [Pointee] {
-        var result = [Pointee]()
-        for i in 0..<n.getInt() {
-            result.append(advanced(by: i).pointee)
-        }
-        return result
+
+    func buffer(n: Int) -> UnsafeMutableBufferPointer<Pointee> {
+        return UnsafeMutableBufferPointer(start: self, count: n)
     }
-    
+
     func advanced(by n: Int, wordSize: Int) -> UnsafeMutableRawPointer {
         return self.raw.advanced(by: n * wordSize)
     }

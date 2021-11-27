@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "CRuntime.h"
+#import "Runtime.h"
 
 FOUNDATION_EXPORT double RuntimeVersionNumber;
 FOUNDATION_EXPORT const unsigned char RuntimeVersionString[];

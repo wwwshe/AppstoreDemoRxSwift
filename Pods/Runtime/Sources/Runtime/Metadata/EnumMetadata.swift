@@ -20,32 +20,54 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import Foundation
-
 struct EnumMetadata: NominalMetadataType {
-    
+
     var pointer: UnsafeMutablePointer<EnumMetadataLayout>
 
+    var numberOfPayloadCases: UInt32 {
+        return pointer.pointee.typeDescriptor.pointee.numPayloadCasesAndPayloadSizeOffset & 0x00FFFFFF
+    }
+
+    var numberOfCases: UInt32 {
+        return pointer.pointee.typeDescriptor.pointee.numEmptyCases + numberOfPayloadCases
+    }
+
     mutating func cases() -> [Case] {
-        let fieldDescriptor = pointer.pointee.typeDescriptor.pointee
-            .fieldDescriptor
-            .advanced()
-        
-        return (0..<numberOfFields()).map { i in
+        guard pointer.pointee.typeDescriptor.pointee.fieldDescriptor.offset != 0 else {
+            return []
+        }
+
+        let fieldDescriptor = pointer.pointee
+            .typeDescriptor.pointee
+            .fieldDescriptor.advanced()
+
+        let genericVector = genericArgumentVector()
+
+        return (0..<numberOfCases).map { i in
             let record = fieldDescriptor
                 .pointee
                 .fields
-                .element(at: i)
-            
-            return Case(name: record.pointee.fieldName())
+                .element(at: Int(i))
+
+            return Case(
+                name: record.pointee.fieldName(),
+                payloadType: record.pointee._mangledTypeName.offset == 0
+                    ? nil
+                    : record.pointee.type(
+                        genericContext: pointer.pointee.typeDescriptor,
+                        genericArguments: genericVector
+                    )
+            )
         }
     }
-    
+
     mutating func toTypeInfo() -> TypeInfo {
         var info = TypeInfo(metadata: self)
         info.mangledName = mangledName()
         info.cases = cases()
-        info.genericTypes = genericArguments()
+        info.genericTypes = Array(genericArguments())
+        info.numberOfEnumCases = Int(numberOfCases)
+        info.numberOfPayloadEnumCases = Int(numberOfPayloadCases)
         return info
     }
 }

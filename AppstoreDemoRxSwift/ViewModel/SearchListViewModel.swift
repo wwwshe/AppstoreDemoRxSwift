@@ -10,48 +10,56 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class SearchListViewModel{
+final class SearchListViewModel {
+    /// 검색어
     var seachText = BehaviorRelay(value: "")
+    /// 이전 검색어
     var beforeSearchText = BehaviorRelay(value: "")
-   
     var isEmpty = BehaviorRelay(value: false)
-   
+
     lazy var data: Driver<[AppstoreSearchResult]> = {
-        
-        return  self.seachText.asObservable().throttle(.milliseconds(300), scheduler: MainScheduler.instance).distinctUntilChanged().flatMapLatest({ (word) -> Observable<[AppstoreSearchResult]> in
-            return self.appstoreDataBy(word)
-        }).asDriver(onErrorJustReturn: [])
+        return self.seachText.asObservable()
+            .throttle(.milliseconds(300), scheduler: MainScheduler.instance)
+            .distinctUntilChanged()
+            .flatMapLatest({ (word) -> Observable<[AppstoreSearchResult]> in
+                return self.appstoreDataBy(word)
+            }).asDriver(onErrorJustReturn: [])
     }()
+
     lazy var beforeWords: Driver<[BeforeKeywords]> = {
-        return  self.beforeSearchText.asObservable().throttle(.milliseconds(300), scheduler: MainScheduler.instance).distinctUntilChanged().flatMapLatest({ (word) -> Observable<[BeforeKeywords]> in
-            return self.getBeforeWords(word: word)
-        }).asDriver(onErrorJustReturn: [])
+        return self.beforeSearchText.asObservable()
+            .throttle(.milliseconds(300), scheduler: MainScheduler.instance)
+            .distinctUntilChanged()
+            .flatMapLatest({ (word) -> Observable<[BeforeKeywords]> in
+                return self.getBeforeWords(word: word)
+            }).asDriver(onErrorJustReturn: [])
     }()
-    
+
     func appstoreDataBy(_ word: String) -> Observable<[AppstoreSearchResult]> {
         let urlString = String(format: "\(BASE_URL)\(SEARCH_URL)", word)
-   
+
         guard !word.isEmpty,
-            let url = URL(string : urlString.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed) ?? "") else {
-            return Observable.just([])
-        }
-       
-        return URLSession.shared.rx.json(url: url).retry(3).catchErrorJustReturn([]).map(parse)
+              let urlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed),
+              let url = URL(string: urlString) else {
+                  return Observable.just([])
+              }
+
+        return URLSession.shared.rx.json(url: url).retry(3).catchAndReturn([]).map(parse)
     }
-    
-    func parse(json : Any) -> [AppstoreSearchResult]{
-        guard json is [String : Any] else {
+
+    func parse(json: Any) -> [AppstoreSearchResult] {
+        guard json is [String: Any] else {
             return []
         }
-        let dic = json as! [String : Any]
+
         do {
-            let jsonData = try JSONSerialization.data(withJSONObject: dic, options: .prettyPrinted)
+            let jsonData = try JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
             let appdata = try AppStoreData(data: jsonData)
             let results = appdata.results
-            
+
             if results.count > 0 {
                 isEmpty.accept(false)
-            }else{
+            } else {
                 isEmpty.accept(true)
             }
             return results
@@ -61,8 +69,8 @@ class SearchListViewModel{
             return []
         }
     }
-    
-    func getBeforeWords(word : String) -> Observable<[BeforeKeywords]>{
+
+    func getBeforeWords(word: String) -> Observable<[BeforeKeywords]> {
         let realmManager = RealmManager.shared
         let keywords = realmManager.selectBeforeWords(word: word)
         return Observable.from(optional: keywords)

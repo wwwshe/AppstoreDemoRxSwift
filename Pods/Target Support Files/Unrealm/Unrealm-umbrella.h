@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "Object+Unrealm.h"
 #import "ObjectiveCRuntime.h"
 
 FOUNDATION_EXPORT double UnrealmVersionNumber;

@@ -10,10 +10,10 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class AppDetailViewModel{
-    var item : AppstoreSearchResult? = nil
-    
-    func getItem() -> Observable<AppstoreSearchResult>{
+final class AppDetailViewModel {
+    var item: AppstoreSearchResult?
+
+    func getItem() -> Observable<AppstoreSearchResult> {
         return Observable.from(optional: item)
     }
 }
