@@ -21,9 +21,9 @@
 // SOFTWARE.
 
 struct ProtocolMetadata: MetadataType {
-
+    
     var pointer: UnsafeMutablePointer<ProtocolMetadataLayout>
-
+    
     mutating func mangledName() -> String {
         return String(cString: pointer.pointee.protocolDescriptorVector.pointee.mangledName)
     }

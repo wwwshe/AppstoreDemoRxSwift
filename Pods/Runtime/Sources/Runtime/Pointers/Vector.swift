@@ -21,9 +21,9 @@
 // SOFTWARE.
 
 struct Vector<Element> {
-
+    
     var element: Element
-
+    
     mutating func vector(n: Int) -> UnsafeBufferPointer<Element> {
         return withUnsafePointer(to: &self) {
             $0.withMemoryRebound(to: Element.self, capacity: 1) { start in
@@ -31,7 +31,7 @@ struct Vector<Element> {
             }
         }
     }
-
+    
     mutating func element(at i: Int) -> UnsafeMutablePointer<Element> {
         return withUnsafePointer(to: &self) {
             return $0.raw.assumingMemoryBound(to: Element.self).advanced(by: i).mutable

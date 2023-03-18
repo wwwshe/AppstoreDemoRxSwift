@@ -21,7 +21,7 @@
 // SOFTWARE.
 
 public struct TypeInfo {
-
+    
     public var kind: Kind = .class
     public var name: String = ""
     public var type: Any.Type = Any.self
@@ -35,7 +35,7 @@ public struct TypeInfo {
     public var numberOfEnumCases: Int = 0
     public var numberOfPayloadEnumCases: Int = 0
     public var genericTypes: [Any.Type] = []
-
+    
     init<Metadata: MetadataType>(metadata: Metadata) {
         kind = metadata.kind
         size = metadata.size
@@ -44,25 +44,25 @@ public struct TypeInfo {
         type = metadata.type
         name = String(describing: metadata.type)
     }
-
+    
     public var superClass: Any.Type? {
         return inheritance.first
     }
-
+    
     public func property(named: String) throws -> PropertyInfo {
         if let prop = properties.first(where: { $0.name == named }) {
             return prop
         }
-
+        
         throw RuntimeError.noPropertyNamed(name: named)
     }
 }
 
 public func typeInfo(of type: Any.Type) throws -> TypeInfo {
     let kind = Kind(type: type)
-
+    
     var typeInfoConvertible: TypeInfoConvertible
-
+    
     switch kind {
     case .struct:
         typeInfoConvertible = StructMetadata(type: type)
@@ -77,6 +77,6 @@ public func typeInfo(of type: Any.Type) throws -> TypeInfo {
     default:
         throw RuntimeError.couldNotGetTypeInfo(type: type, kind: kind)
     }
-
+    
     return typeInfoConvertible.toTypeInfo()
 }

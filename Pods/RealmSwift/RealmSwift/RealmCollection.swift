@@ -250,7 +250,7 @@ extension AnyRealmValue: RealmCollectionValue {
 extension Optional: RealmCollectionValue where Wrapped: RealmCollectionValue,
                                                Wrapped: _DefaultConstructible {
     /// :nodoc:
-    public static func _rlmDefaultValue(_ forceDefaultInitialization: Bool) -> Wrapped? {
+    public static func _rlmDefaultValue(_ forceDefaultInitialization: Bool) -> Optional<Wrapped> {
         if forceDefaultInitialization {
             return Wrapped()
         }
@@ -755,7 +755,7 @@ public extension RealmCollection where Element: ObjectBase {
      - parameter keyPath:   The key path to sort by.
      - parameter ascending: The direction to sort in.
      */
-    func sorted<T: Comparable>(by keyPath: KeyPath<Element, T?>, ascending: Bool) -> Results<Element> {
+    func sorted<T: Comparable>(by keyPath: KeyPath<Element, Optional<T>>, ascending: Bool) -> Results<Element> {
         sorted(byKeyPath: _name(for: keyPath), ascending: ascending)
     }
 }

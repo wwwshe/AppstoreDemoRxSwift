@@ -21,34 +21,34 @@
 // SOFTWARE.
 
 struct EnumMetadata: NominalMetadataType {
-
+    
     var pointer: UnsafeMutablePointer<EnumMetadataLayout>
 
     var numberOfPayloadCases: UInt32 {
         return pointer.pointee.typeDescriptor.pointee.numPayloadCasesAndPayloadSizeOffset & 0x00FFFFFF
     }
-
+    
     var numberOfCases: UInt32 {
         return pointer.pointee.typeDescriptor.pointee.numEmptyCases + numberOfPayloadCases
     }
-
+    
     mutating func cases() -> [Case] {
         guard pointer.pointee.typeDescriptor.pointee.fieldDescriptor.offset != 0 else {
             return []
         }
-
+        
         let fieldDescriptor = pointer.pointee
             .typeDescriptor.pointee
             .fieldDescriptor.advanced()
-
+        
         let genericVector = genericArgumentVector()
-
+        
         return (0..<numberOfCases).map { i in
             let record = fieldDescriptor
                 .pointee
                 .fields
                 .element(at: Int(i))
-
+            
             return Case(
                 name: record.pointee.fieldName(),
                 payloadType: record.pointee._mangledTypeName.offset == 0
@@ -60,7 +60,7 @@ struct EnumMetadata: NominalMetadataType {
             )
         }
     }
-
+    
     mutating func toTypeInfo() -> TypeInfo {
         var info = TypeInfo(metadata: self)
         info.mangledName = mangledName()

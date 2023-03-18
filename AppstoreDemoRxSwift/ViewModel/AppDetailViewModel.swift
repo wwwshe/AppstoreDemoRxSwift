@@ -14,7 +14,6 @@ final class AppDetailViewModel {
     var item: AppstoreSearchResult?
 
     func getItem() -> Observable<AppstoreSearchResult> {
-        print("item : \(item)")
         return Observable.from(optional: item)
     }
 }

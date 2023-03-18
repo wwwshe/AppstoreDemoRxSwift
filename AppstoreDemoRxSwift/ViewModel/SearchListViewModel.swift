@@ -64,7 +64,6 @@ final class SearchListViewModel {
             }
             return results
         } catch {
-            print(error.localizedDescription)
             isEmpty.accept(true)
             return []
         }

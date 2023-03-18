@@ -27,7 +27,7 @@ struct ClassHeader {
 }
 
 extension ClassHeader {
-
+    
     static func size() -> Int {
         return MemoryLayout<ClassHeader>.size
     }

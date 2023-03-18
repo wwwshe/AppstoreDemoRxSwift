@@ -99,7 +99,6 @@ final class SearchListViewController: ViewControllerHelper {
                       let controller = self.getViewController(target: AppDetailViewController.self),
                       let presentcontroller = self.presentingViewController,
                       let navi = presentcontroller.navigationController else {
-                          print("self nil")
                           return
                       }
 

@@ -25,9 +25,9 @@ func metadataPointer(type: Any.Type) -> UnsafeMutablePointer<Int> {
 }
 
 func metadata(of type: Any.Type) throws -> MetadataInfo {
-
+    
     let kind = Kind(type: type)
-
+    
     switch kind {
     case .struct:
         return StructMetadata(type: type)

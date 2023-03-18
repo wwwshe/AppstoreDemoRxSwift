@@ -21,9 +21,9 @@
 // SOFTWARE.
 
 struct FunctionMetadata: MetadataType {
-
+    
     var pointer: UnsafeMutablePointer<FunctionMetadataLayout>
-
+    
     func info() -> FunctionInfo {
         let (numberOfArguments, argumentTypes, returnType) = argumentInfo()
         return FunctionInfo(numberOfArguments: numberOfArguments,
@@ -31,21 +31,21 @@ struct FunctionMetadata: MetadataType {
                             returnType: returnType,
                             throws: `throws`())
     }
-
+    
     private func argumentInfo() -> (Int, [Any.Type], Any.Type) {
         let n = numberArguments()
         let argTypeBuffer = pointer.pointee.argumentVector.vector(n: n + 1)
-
+        
         let resultType = argTypeBuffer[0]
         let argTypes = Array(argTypeBuffer.dropFirst())
-
+        
         return (n, argTypes, resultType)
     }
-
+    
     private func numberArguments() -> Int {
         return pointer.pointee.flags & 0x00FFFFFF
     }
-
+    
     private func `throws`() -> Bool {
         return pointer.pointee.flags & 0x01000000 != 0
     }

@@ -26,7 +26,7 @@ struct AnyClassMetadataLayout {
     var superClass: Any.Type
     var objCRuntimeReserve: (Int, Int)
     var rodataPointer: Int
-
+    
     var isSwiftClass: Bool {
         return (rodataPointer & classIsSwiftMask()) != 0
     }

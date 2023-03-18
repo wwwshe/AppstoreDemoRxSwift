@@ -104,6 +104,7 @@ extension Object: RealmCollectionValue {
         RLMInitializeWithValue(self, value, .partialPrivateShared())
     }
 
+
     // MARK: Properties
 
     /// The Realm which manages the object, or `nil` if the object is unmanaged.

@@ -22,11 +22,11 @@
 
 struct RelativePointer<Offset: FixedWidthInteger, Pointee> {
     var offset: Offset
-
+    
     mutating func pointee() -> Pointee {
         return advanced().pointee
     }
-
+    
     mutating func advanced() -> UnsafeMutablePointer<Pointee> {
         let offset = self.offset
         return withUnsafePointer(to: &self) { p in

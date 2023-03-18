@@ -31,7 +31,6 @@ extension ViewControllerLoadHelper {
         let identifier = String(describing: target)
         let identifiersList = storyBoard.value(forKey: "identifierToNibNameMap") as? [String: Any]
         guard (identifiersList?[identifier]) != nil else {
-            print("UIViewController identifier not found, identifier : \(identifier)")
             return target.init()
         }
         var viewcontroller: UIViewController

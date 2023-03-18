@@ -31,8 +31,6 @@ extension AppDetailTableDataSource {
             self?.parentViewcontroller?.present(activityVC, animated: true, completion: nil)
 
           activityVC.completionWithItemsHandler = { (_, _, _, _) in
-
-                 print("completion")
           }
 
         }).disposed(by: cell.disposeBag)

@@ -174,6 +174,7 @@ extension Realm {
     }
 }
 
+
 // MARK: Private Helpers
 
 internal func accessorMigrationBlock(_ migrationBlock: @escaping MigrationBlock) -> RLMMigrationBlock {

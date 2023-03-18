@@ -15,7 +15,7 @@ struct EnumTypeDescriptor: TypeDescriptor {
     var numEmptyCases: UInt32
     var offsetToTheFieldOffsetVector: RelativeVectorPointer<Int32, Int32>
     var genericContextHeader: TargetTypeGenericContextDescriptorHeader
-
+    
     var numberOfFields: Int32 {
         get { return 0 }
         set {   }

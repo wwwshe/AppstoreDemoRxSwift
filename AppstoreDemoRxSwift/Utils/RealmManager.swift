@@ -25,7 +25,7 @@ final class RealmManager {
                 realm.add(word, update: .all)
             }
         } catch {
-            print("error : \(error)")
+            debugPrint("error : \(error)")
         }
     }
 

@@ -27,6 +27,7 @@
 		12794E2723E1677900EF0145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12794E2523E1677900EF0145 /* Main.storyboard */; };
 		12794E2923E1677A00EF0145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12794E2823E1677A00EF0145 /* Assets.xcassets */; };
 		12794E2C23E1677A00EF0145 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12794E2A23E1677A00EF0145 /* LaunchScreen.storyboard */; };
+		79171124C0EFE44C52696AB5 /* Pods_AppstoreDemoRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569DB8A01396BF53A3D03E1D /* Pods_AppstoreDemoRxSwift.framework */; };
 		CA4DBB4E240762F400E69816 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DBB4D240762F400E69816 /* AppDetailViewController.swift */; };
 		CA4DBB5024076CA300E69816 /* AppDetailTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DBB4F24076CA300E69816 /* AppDetailTitleTableViewCell.swift */; };
 		CA4DBB5224076D8500E69816 /* AppDetailRatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DBB5124076D8500E69816 /* AppDetailRatingTableViewCell.swift */; };
@@ -44,7 +45,6 @@
 		CA59D2EB24091A2500A66451 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA59D2EA24091A2500A66451 /* UICollectionViewCell+Extension.swift */; };
 		CA59D2EE2409229600A66451 /* ImageSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA59D2ED2409229600A66451 /* ImageSlideViewController.swift */; };
 		CA59D2F02409230200A66451 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA59D2EF2409230200A66451 /* ImageCollectionViewCell.swift */; };
-		E7F0BDF845D96B69E3AA6B2C /* Pods_AppstoreDemoRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92D842B703F4FEAA695D60A /* Pods_AppstoreDemoRxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,8 +74,9 @@
 		12794E3823E1677A00EF0145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12794E4123E1677A00EF0145 /* AppstoreDemoRxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppstoreDemoRxSwiftUITests.swift; sourceTree = "<group>"; };
 		12794E4323E1677A00EF0145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEEEA6C83ACB991E924883C6 /* Pods-AppstoreDemoRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppstoreDemoRxSwift.release.xcconfig"; path = "Target Support Files/Pods-AppstoreDemoRxSwift/Pods-AppstoreDemoRxSwift.release.xcconfig"; sourceTree = "<group>"; };
-		C92D842B703F4FEAA695D60A /* Pods_AppstoreDemoRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppstoreDemoRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E93D38D777B2000539763B5 /* Pods-AppstoreDemoRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppstoreDemoRxSwift.debug.xcconfig"; path = "Target Support Files/Pods-AppstoreDemoRxSwift/Pods-AppstoreDemoRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		569DB8A01396BF53A3D03E1D /* Pods_AppstoreDemoRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppstoreDemoRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B520015A481582FCF1E28D12 /* Pods-AppstoreDemoRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppstoreDemoRxSwift.release.xcconfig"; path = "Target Support Files/Pods-AppstoreDemoRxSwift/Pods-AppstoreDemoRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		CA4DBB4D240762F400E69816 /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
 		CA4DBB4F24076CA300E69816 /* AppDetailTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailTitleTableViewCell.swift; sourceTree = "<group>"; };
 		CA4DBB5124076D8500E69816 /* AppDetailRatingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailRatingTableViewCell.swift; sourceTree = "<group>"; };
@@ -93,7 +94,6 @@
 		CA59D2EA24091A2500A66451 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
 		CA59D2ED2409229600A66451 /* ImageSlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSlideViewController.swift; sourceTree = "<group>"; };
 		CA59D2EF2409230200A66451 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageCollectionViewCell.swift; path = "../New Group/ImageCollectionViewCell.swift"; sourceTree = "<group>"; };
-		F4965EDAFA42A9FF7245989B /* Pods-AppstoreDemoRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppstoreDemoRxSwift.debug.xcconfig"; path = "Target Support Files/Pods-AppstoreDemoRxSwift/Pods-AppstoreDemoRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7F0BDF845D96B69E3AA6B2C /* Pods_AppstoreDemoRxSwift.framework in Frameworks */,
+				79171124C0EFE44C52696AB5 /* Pods_AppstoreDemoRxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +244,7 @@
 				12794E4023E1677A00EF0145 /* AppstoreDemoRxSwiftUITests */,
 				12794E1D23E1677900EF0145 /* Products */,
 				26266A53CF127FDDF9C6DD33 /* Pods */,
-				7294F91F749AE0EA1F971C5F /* Frameworks */,
+				661BDE4D28999A00D1E607CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -295,16 +295,16 @@
 		26266A53CF127FDDF9C6DD33 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F4965EDAFA42A9FF7245989B /* Pods-AppstoreDemoRxSwift.debug.xcconfig */,
-				BEEEA6C83ACB991E924883C6 /* Pods-AppstoreDemoRxSwift.release.xcconfig */,
+				4E93D38D777B2000539763B5 /* Pods-AppstoreDemoRxSwift.debug.xcconfig */,
+				B520015A481582FCF1E28D12 /* Pods-AppstoreDemoRxSwift.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		7294F91F749AE0EA1F971C5F /* Frameworks */ = {
+		661BDE4D28999A00D1E607CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C92D842B703F4FEAA695D60A /* Pods_AppstoreDemoRxSwift.framework */,
+				569DB8A01396BF53A3D03E1D /* Pods_AppstoreDemoRxSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -335,12 +335,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12794E4623E1677A00EF0145 /* Build configuration list for PBXNativeTarget "AppstoreDemoRxSwift" */;
 			buildPhases = (
-				D17E43ED36A17D2097DE2FD4 /* [CP] Check Pods Manifest.lock */,
+				0415D44268B4E0E6EF0B18E2 /* [CP] Check Pods Manifest.lock */,
 				12794E1823E1677900EF0145 /* Sources */,
 				12794E1923E1677900EF0145 /* Frameworks */,
 				12794E1A23E1677900EF0145 /* Resources */,
 				08301EDB2751D9D50018319C /* SwiftLint Run Script */,
-				99336336C84D8A1738830530 /* [CP] Embed Pods Frameworks */,
+				A2A7E7806712BF814757EE8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -398,42 +398,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08301EDB2751D9D50018319C /* SwiftLint Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "SwiftLint Run Script";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		99336336C84D8A1738830530 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppstoreDemoRxSwift/Pods-AppstoreDemoRxSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppstoreDemoRxSwift/Pods-AppstoreDemoRxSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppstoreDemoRxSwift/Pods-AppstoreDemoRxSwift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D17E43ED36A17D2097DE2FD4 /* [CP] Check Pods Manifest.lock */ = {
+		0415D44268B4E0E6EF0B18E2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -453,6 +418,41 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		08301EDB2751D9D50018319C /* SwiftLint Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		A2A7E7806712BF814757EE8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppstoreDemoRxSwift/Pods-AppstoreDemoRxSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppstoreDemoRxSwift/Pods-AppstoreDemoRxSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppstoreDemoRxSwift/Pods-AppstoreDemoRxSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -637,7 +637,7 @@
 		};
 		12794E4723E1677A00EF0145 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4965EDAFA42A9FF7245989B /* Pods-AppstoreDemoRxSwift.debug.xcconfig */;
+			baseConfigurationReference = 4E93D38D777B2000539763B5 /* Pods-AppstoreDemoRxSwift.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)\n";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -657,7 +657,7 @@
 		};
 		12794E4823E1677A00EF0145 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEEEA6C83ACB991E924883C6 /* Pods-AppstoreDemoRxSwift.release.xcconfig */;
+			baseConfigurationReference = B520015A481582FCF1E28D12 /* Pods-AppstoreDemoRxSwift.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)\n";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

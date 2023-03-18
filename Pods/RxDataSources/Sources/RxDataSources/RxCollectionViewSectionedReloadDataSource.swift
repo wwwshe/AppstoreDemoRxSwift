@@ -15,8 +15,10 @@ import RxCocoa
 #endif
 import Differentiator
 
-open class RxCollectionViewSectionedReloadDataSource<Section: SectionModelType>: CollectionViewSectionedDataSource<Section>, RxCollectionViewDataSourceType {
-
+open class RxCollectionViewSectionedReloadDataSource<Section: SectionModelType>
+    : CollectionViewSectionedDataSource<Section>
+    , RxCollectionViewDataSourceType {
+    
     public typealias Element = [Section]
 
     open func collectionView(_ collectionView: UICollectionView, observedEvent: Event<Element>) {

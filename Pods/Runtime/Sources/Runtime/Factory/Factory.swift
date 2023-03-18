@@ -28,16 +28,16 @@ public func createInstance<T>(constructor: ((PropertyInfo) throws -> Any)? = nil
     if let value = try createInstance(of: T.self, constructor: constructor) as? T {
         return value
     }
-
+    
     throw RuntimeError.unableToBuildType(type: T.self)
 }
 
 public func createInstance(of type: Any.Type, constructor: ((PropertyInfo) throws -> Any)? = nil) throws -> Any {
-
+    
     if let defaultConstructor = type as? DefaultConstructor.Type {
         return defaultConstructor.init()
     }
-
+    
     let kind = Kind(type: type)
     switch kind {
     case .struct:
@@ -80,7 +80,7 @@ func setProperties(typeInfo: TypeInfo,
         let value = try constructor.map { (resolver) -> Any in
             return try resolver(property)
         } ?? defaultValue(of: property.type)
-
+        
         let valuePointer = pointer.advanced(by: property.offset)
         let sets = setters(type: property.type)
         sets.set(value: value, pointer: valuePointer, initialize: true)
@@ -88,12 +88,12 @@ func setProperties(typeInfo: TypeInfo,
 }
 
 func defaultValue(of type: Any.Type) throws -> Any {
-
+    
     if let constructable = type as? DefaultConstructor.Type {
         return constructable.init()
     } else if let isOptional = type as? ExpressibleByNilLiteral.Type {
         return isOptional.init(nilLiteral: ())
     }
-
+    
     return try createInstance(of: type)
 }
